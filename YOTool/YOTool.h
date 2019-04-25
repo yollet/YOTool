@@ -7,6 +7,37 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIView+YOTool.h"
+#import "YOMainTool.h"
+#import "UIFont+YOTool.h"
+#import "NSDictionary+YOLogTool.h"
+#import "UIImage+YOTool.h"
+#import "UIViewController+YOTool.h"
+#import "NSMutableDictionary+YOTool.h"
+#import "NSNull+YOTool.h"
+#import "UILabel+YOTool.h"
+#import "UITextField+YOTool.h"
+#import "UIButton+YOTool.h"
+#import "YOPickView.h"
+
+CG_INLINE CGFloat FitX(CGFloat a)
+{
+    return round([YOMainTool sharedInstance].fitX * a);
+}
+
+CG_INLINE CGFloat FitY(CGFloat a)
+{
+    return round([YOMainTool sharedInstance].fitY * a);
+}
+
+CG_INLINE CGRect
+YORectMake(CGFloat x, CGFloat y, CGFloat width, CGFloat height)
+{
+    CGRect rect;
+    rect.origin.x = FitX(x); rect.origin.y = FitY(y);
+    rect.size.width = FitX(width); rect.size.height = FitY(height);
+    return rect;
+}
 
 //! Project version number for YOTool.
 FOUNDATION_EXPORT double YOToolVersionNumber;
