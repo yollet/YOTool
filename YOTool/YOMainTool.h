@@ -104,6 +104,11 @@ typedef void(^CleanCacheBlock)(void);
  */
 - (float)folderSizeAtPath;
 
+/**
+ 清除WKWeb缓存
+ */
+- (void)cleanrCatch;
+
 @end
 
 NS_ASSUME_NONNULL_END

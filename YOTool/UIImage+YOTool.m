@@ -13,13 +13,18 @@
 #pragma mark -- 圆角绘制 --
 - (void)roundImageWithSize:(CGSize)size radius:(CGFloat)radius completion:(void(^)(UIImage *newImage))completion
 {
+    [self roundImageWithSize:size radius:radius backColor:[UIColor whiteColor] completion:completion];
+}
+
+- (void)roundImageWithSize:(CGSize)size radius:(CGFloat)radius backColor:(UIColor *)backColor completion:(void(^)(UIImage *newImage))completion
+{
     // 异步绘制裁切
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         // 利用绘图建立上下文
         UIGraphicsBeginImageContextWithOptions(size, true, 0);
         CGRect rect = CGRectMake(0, 0, size.width, size.height);
         // 填充颜色
-        [[UIColor whiteColor] setFill];
+        [backColor setFill];
         UIRectFill(rect);
         // 贝塞尔裁切
         UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:rect cornerRadius:radius];
@@ -38,6 +43,5 @@
         });
     });
 }
-
 
 @end

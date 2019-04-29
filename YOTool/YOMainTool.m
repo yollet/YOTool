@@ -9,6 +9,7 @@
 #import "YOMainTool.h"
 #import <sys/utsname.h>
 #import <CommonCrypto/CommonDigest.h>
+#import <WebKit/WebKit.h>
 
 @implementation YOMainTool
 
@@ -317,6 +318,25 @@
     }
     
     return folderSize / ( 1024.0 * 1024.0 );
+}
+
+#pragma mark -- 清除缓存 --
+- (void)cleanrCatch
+{
+    if (@available(iOS 9.0, *)) {
+        NSArray * types =@[WKWebsiteDataTypeMemoryCache,WKWebsiteDataTypeDiskCache]; // 9.0之后才有的
+        NSSet *websiteDataTypes = [NSSet setWithArray:types];
+        NSDate *dateFrom = [NSDate dateWithTimeIntervalSince1970:0];
+        [[WKWebsiteDataStore defaultDataStore] removeDataOfTypes:websiteDataTypes modifiedSince:dateFrom completionHandler:^{
+            
+        }];
+    } else {
+        NSString *libraryPath = [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory,NSUserDomainMask,YES) objectAtIndex:0];
+        NSString *cookiesFolderPath = [libraryPath stringByAppendingString:@"/Cookies"];
+        NSLog(@"%@", cookiesFolderPath);
+        NSError *errors;
+        [[NSFileManager defaultManager] removeItemAtPath:cookiesFolderPath error:&errors];
+    }
 }
 
 #pragma mark -- 获取设备机型 --

@@ -17,6 +17,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)roundImageWithSize:(CGSize)size radius:(CGFloat)radius completion:(void(^)(UIImage *newImage))completion;
 
+/**
+ 圆角绘制（设置背景色）
+ */
+- (void)roundImageWithSize:(CGSize)size radius:(CGFloat)radius backColor:(UIColor *)backColor completion:(void(^)(UIImage *newImage))completion;
+
 @end
 
 NS_ASSUME_NONNULL_END

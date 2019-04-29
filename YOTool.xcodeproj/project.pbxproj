@@ -74,6 +74,7 @@
 		10110B1B462D543F1368EA9C /* libPods-YOToolDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YOToolDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		418FBD89FA842A5F9303EB6C /* Pods-YOToolDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YOToolDemo.release.xcconfig"; path = "Target Support Files/Pods-YOToolDemo/Pods-YOToolDemo.release.xcconfig"; sourceTree = "<group>"; };
 		65E81132B83C257BEDE99DD0 /* Pods-YOToolDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YOToolDemo.debug.xcconfig"; path = "Target Support Files/Pods-YOToolDemo/Pods-YOToolDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		CD92BA9122731E0700B44FD7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		CDCA939022713F1200A38A3D /* YOTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YOTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDCA939322713F1200A38A3D /* YOTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YOTool.h; sourceTree = "<group>"; };
 		CDCA939422713F1200A38A3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -282,6 +283,7 @@
 		CDCA93E02271417000A38A3D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CD92BA9122731E0700B44FD7 /* SystemConfiguration.framework */,
 				10110B1B462D543F1368EA9C /* libPods-YOToolDemo.a */,
 			);
 			name = Frameworks;
