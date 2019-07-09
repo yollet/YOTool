@@ -31,6 +31,11 @@
         self.fitX = [UIScreen mainScreen].bounds.size.width / 375.0;
         self.fitY = [UIScreen mainScreen].bounds.size.height / 667.0;
         
+        if ([self isIPad]) {
+            self.fitX = [UIScreen mainScreen].bounds.size.width / 1024.0;
+            self.fitY = [UIScreen mainScreen].bounds.size.height / 766.0;
+        }
+        
         self.isX = NO;
         self.topHeight = 0;
         self.bottomHeight = 0;
@@ -51,7 +56,7 @@
 #pragma mark -- 判断是否是手机号 --
 - (BOOL)isPhoneNum:(NSString *)phoneNum
 {
-    NSString *MOBILE = @"^1(3[0-9]|4[57]|5[0-35-9]|8[0-9]|7[0678])\\d{8}$";
+    NSString *MOBILE = @"^1(3|4|5|6|7|8|9)\\d{9}$";
     NSPredicate *regextestmobile = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", MOBILE];
     return [regextestmobile evaluateWithObject:phoneNum];
 }
@@ -261,9 +266,14 @@
 #pragma mark -- 时间戳转时间 --
 + (NSString *)timestampToDateFormatter:(NSInteger)timestamp
 {
+    return [YOMainTool timestampToDateFormatter:timestamp formatterStr:@"yyyy-MM-dd HH:mm"];
+}
+
++ (NSString *)timestampToDateFormatter:(NSInteger)timestamp formatterStr:(NSString *)formatterStr
+{
     NSDate *date = [NSDate dateWithTimeIntervalSince1970:timestamp];
     NSDateFormatter *format = [[NSDateFormatter alloc] init];
-    [format setDateFormat:@"yyyy-MM-dd HH:mm"];
+    [format setDateFormat:formatterStr];
     return [format stringFromDate:date];
 }
 
@@ -518,6 +528,17 @@
     //CLog(@"NOTE: Unknown device type: %@", deviceString);
     
     return platform;
+}
+
+#pragma mark -- 判断是不是pad --
+- (BOOL)isIPad
+{
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        return YES;
+    }
+    else {
+        return NO;
+    }
 }
 
 @end

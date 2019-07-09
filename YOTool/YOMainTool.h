@@ -94,6 +94,8 @@ typedef void(^CleanCacheBlock)(void);
  */
 + (NSString *)timestampToDateFormatter:(NSInteger)timestamp;
 
++ (NSString *)timestampToDateFormatter:(NSInteger)timestamp formatterStr:(NSString *)formatterStr;
+
 /**
  清除缓存
  */
@@ -108,6 +110,11 @@ typedef void(^CleanCacheBlock)(void);
  清除WKWeb缓存
  */
 - (void)cleanrCatch;
+
+/**
+ 判断是不是pad
+ */
+- (BOOL)isIPad;
 
 @end
 
