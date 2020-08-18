@@ -15,7 +15,7 @@
     NSMutableDictionary *tempDic = [NSMutableDictionary dictionary];
     for (NSString *key in oldDic) {
         id value = [oldDic objectForKey:key];
-        if ([value isKindOfClass:[NSNull class]]) {
+        if ([value isKindOfClass:[NSNull class]] || value == nil) {
             [tempDic setObject:@"" forKey:key];
         }
         else {
@@ -23,6 +23,16 @@
         }
     }
     return tempDic;
+}
+
+- (void)yoSetObject:(id)anObject forKey:(id<NSCopying>)aKey
+{
+    if (!anObject || anObject == nil || anObject == NULL || [anObject isKindOfClass:[NSNull class]]) {
+        [self setObject:@"" forKey:aKey];
+    }
+    else {
+        [self setObject:anObject forKey:aKey];
+    }
 }
 
 @end

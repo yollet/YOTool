@@ -90,7 +90,7 @@ typedef void(^CleanCacheBlock)(void);
 - (NSString *)deviceVersion;
 
 /**
- 时间戳转时间 (yyyy-MM-dd HH:mm)
+ 时间戳转时间 (yyyy-MM-dd HH:mm) 单位：秒
  */
 + (NSString *)timestampToDateFormatter:(NSInteger)timestamp;
 
@@ -115,6 +115,11 @@ typedef void(^CleanCacheBlock)(void);
  判断是不是pad
  */
 - (BOOL)isIPad;
+
+/**
+ 字符串转json字符串（去转义）
+ */
+- (NSString *)stringToJSONString:(NSString *)string;
 
 @end
 

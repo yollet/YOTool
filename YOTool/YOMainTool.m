@@ -31,7 +31,7 @@
         self.fitX = [UIScreen mainScreen].bounds.size.width / 375.0;
         self.fitY = [UIScreen mainScreen].bounds.size.height / 667.0;
         
-        if ([self isIPad]) {
+        if ([self isIPad]) { // 仅限横屏
             self.fitX = [UIScreen mainScreen].bounds.size.width / 1024.0;
             self.fitY = [UIScreen mainScreen].bounds.size.height / 766.0;
         }
@@ -539,6 +539,20 @@
     else {
         return NO;
     }
+}
+
+#pragma mark -- 字符串转json字符串（去转义） --
+- (NSString *)stringToJSONString:(NSString *)string
+{
+    NSMutableString *s = [NSMutableString stringWithString:string];
+    [s replaceOccurrencesOfString:@"\"" withString:@"\\\"" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [s length])];
+    [s replaceOccurrencesOfString:@"/" withString:@"\\/" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [s length])];
+    [s replaceOccurrencesOfString:@"\n" withString:@"\\n" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [s length])];
+    [s replaceOccurrencesOfString:@"\b" withString:@"\\b" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [s length])];
+    [s replaceOccurrencesOfString:@"\f" withString:@"\\f" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [s length])];
+    [s replaceOccurrencesOfString:@"\r" withString:@"\\r" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [s length])];
+    [s replaceOccurrencesOfString:@"\t" withString:@"\\t" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [s length])];
+    return [NSString stringWithString:s];
 }
 
 @end

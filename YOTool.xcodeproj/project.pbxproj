@@ -8,6 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		A3019646D26D6A85F62D5E2A /* libPods-YOToolDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10110B1B462D543F1368EA9C /* libPods-YOToolDemo.a */; };
+		CD11727E24EB6F8600E3A934 /* YOBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = CD11727C24EB6F8600E3A934 /* YOBaseView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD11727F24EB6F8600E3A934 /* YOBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD11727D24EB6F8600E3A934 /* YOBaseView.m */; };
+		CD11728224EB703600E3A934 /* YOBaseScroll.h in Headers */ = {isa = PBXBuildFile; fileRef = CD11728024EB703600E3A934 /* YOBaseScroll.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD11728324EB703600E3A934 /* YOBaseScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = CD11728124EB703600E3A934 /* YOBaseScroll.m */; };
+		CD11728624EB709B00E3A934 /* YOBaseCell.h in Headers */ = {isa = PBXBuildFile; fileRef = CD11728424EB709B00E3A934 /* YOBaseCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD11728724EB709B00E3A934 /* YOBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD11728524EB709B00E3A934 /* YOBaseCell.m */; };
+		CD11728A24EB70FD00E3A934 /* YOBaseCollCell.h in Headers */ = {isa = PBXBuildFile; fileRef = CD11728824EB70FD00E3A934 /* YOBaseCollCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD11728B24EB70FD00E3A934 /* YOBaseCollCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD11728924EB70FD00E3A934 /* YOBaseCollCell.m */; };
+		CD11728E24EB752F00E3A934 /* YODatePickView.h in Headers */ = {isa = PBXBuildFile; fileRef = CD11728C24EB752F00E3A934 /* YODatePickView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD11728F24EB752F00E3A934 /* YODatePickView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD11728D24EB752F00E3A934 /* YODatePickView.m */; };
+		CD11729224EB779E00E3A934 /* YOLocationTool.h in Headers */ = {isa = PBXBuildFile; fileRef = CD11729024EB779E00E3A934 /* YOLocationTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD11729324EB779E00E3A934 /* YOLocationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CD11729124EB779E00E3A934 /* YOLocationTool.m */; };
+		CD11729624EB79D600E3A934 /* NSMutableArray+YOTool.h in Headers */ = {isa = PBXBuildFile; fileRef = CD11729424EB79D600E3A934 /* NSMutableArray+YOTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD11729724EB79D600E3A934 /* NSMutableArray+YOTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CD11729524EB79D600E3A934 /* NSMutableArray+YOTool.m */; };
 		CDCA939A22713F1200A38A3D /* YOTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCA939022713F1200A38A3D /* YOTool.framework */; };
 		CDCA939F22713F1200A38A3D /* YOToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCA939E22713F1200A38A3D /* YOToolTests.m */; };
 		CDCA93A122713F1200A38A3D /* YOTool.h in Headers */ = {isa = PBXBuildFile; fileRef = CDCA939322713F1200A38A3D /* YOTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -74,6 +88,20 @@
 		10110B1B462D543F1368EA9C /* libPods-YOToolDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YOToolDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		418FBD89FA842A5F9303EB6C /* Pods-YOToolDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YOToolDemo.release.xcconfig"; path = "Target Support Files/Pods-YOToolDemo/Pods-YOToolDemo.release.xcconfig"; sourceTree = "<group>"; };
 		65E81132B83C257BEDE99DD0 /* Pods-YOToolDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YOToolDemo.debug.xcconfig"; path = "Target Support Files/Pods-YOToolDemo/Pods-YOToolDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		CD11727C24EB6F8600E3A934 /* YOBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YOBaseView.h; sourceTree = "<group>"; };
+		CD11727D24EB6F8600E3A934 /* YOBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YOBaseView.m; sourceTree = "<group>"; };
+		CD11728024EB703600E3A934 /* YOBaseScroll.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YOBaseScroll.h; sourceTree = "<group>"; };
+		CD11728124EB703600E3A934 /* YOBaseScroll.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YOBaseScroll.m; sourceTree = "<group>"; };
+		CD11728424EB709B00E3A934 /* YOBaseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YOBaseCell.h; sourceTree = "<group>"; };
+		CD11728524EB709B00E3A934 /* YOBaseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YOBaseCell.m; sourceTree = "<group>"; };
+		CD11728824EB70FD00E3A934 /* YOBaseCollCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YOBaseCollCell.h; sourceTree = "<group>"; };
+		CD11728924EB70FD00E3A934 /* YOBaseCollCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YOBaseCollCell.m; sourceTree = "<group>"; };
+		CD11728C24EB752F00E3A934 /* YODatePickView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YODatePickView.h; sourceTree = "<group>"; };
+		CD11728D24EB752F00E3A934 /* YODatePickView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YODatePickView.m; sourceTree = "<group>"; };
+		CD11729024EB779E00E3A934 /* YOLocationTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YOLocationTool.h; sourceTree = "<group>"; };
+		CD11729124EB779E00E3A934 /* YOLocationTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YOLocationTool.m; sourceTree = "<group>"; };
+		CD11729424EB79D600E3A934 /* NSMutableArray+YOTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+YOTool.h"; sourceTree = "<group>"; };
+		CD11729524EB79D600E3A934 /* NSMutableArray+YOTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+YOTool.m"; sourceTree = "<group>"; };
 		CD92BA9122731E0700B44FD7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		CDCA939022713F1200A38A3D /* YOTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YOTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDCA939322713F1200A38A3D /* YOTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YOTool.h; sourceTree = "<group>"; };
@@ -220,6 +248,8 @@
 				CDCA940C22717AF300A38A3D /* UIViewController+YOTool.m */,
 				CDCA940F22717E0200A38A3D /* NSMutableDictionary+YOTool.h */,
 				CDCA941022717E0200A38A3D /* NSMutableDictionary+YOTool.m */,
+				CD11729424EB79D600E3A934 /* NSMutableArray+YOTool.h */,
+				CD11729524EB79D600E3A934 /* NSMutableArray+YOTool.m */,
 				CDCA941322717E8400A38A3D /* NSNull+YOTool.h */,
 				CDCA941422717E8400A38A3D /* NSNull+YOTool.m */,
 				CDCA941722717F9900A38A3D /* UILabel+YOTool.h */,
@@ -230,6 +260,18 @@
 				CDCA94202271821A00A38A3D /* UIButton+YOTool.m */,
 				CDCA94272271894200A38A3D /* YOPickView.h */,
 				CDCA94282271894200A38A3D /* YOPickView.m */,
+				CD11727C24EB6F8600E3A934 /* YOBaseView.h */,
+				CD11727D24EB6F8600E3A934 /* YOBaseView.m */,
+				CD11728024EB703600E3A934 /* YOBaseScroll.h */,
+				CD11728124EB703600E3A934 /* YOBaseScroll.m */,
+				CD11728424EB709B00E3A934 /* YOBaseCell.h */,
+				CD11728524EB709B00E3A934 /* YOBaseCell.m */,
+				CD11728824EB70FD00E3A934 /* YOBaseCollCell.h */,
+				CD11728924EB70FD00E3A934 /* YOBaseCollCell.m */,
+				CD11728C24EB752F00E3A934 /* YODatePickView.h */,
+				CD11728D24EB752F00E3A934 /* YODatePickView.m */,
+				CD11729024EB779E00E3A934 /* YOLocationTool.h */,
+				CD11729124EB779E00E3A934 /* YOLocationTool.m */,
 				CDCA939422713F1200A38A3D /* Info.plist */,
 			);
 			path = YOTool;
@@ -298,16 +340,23 @@
 			files = (
 				CDCA941522717E8400A38A3D /* NSNull+YOTool.h in Headers */,
 				CDCA941D2271818300A38A3D /* UITextField+YOTool.h in Headers */,
+				CD11727E24EB6F8600E3A934 /* YOBaseView.h in Headers */,
+				CD11728A24EB70FD00E3A934 /* YOBaseCollCell.h in Headers */,
 				CDCA94052271616300A38A3D /* UIImage+YOTool.h in Headers */,
 				CDCA93A122713F1200A38A3D /* YOTool.h in Headers */,
+				CD11728624EB709B00E3A934 /* YOBaseCell.h in Headers */,
+				CD11729224EB779E00E3A934 /* YOLocationTool.h in Headers */,
 				CDCA941922717F9900A38A3D /* UILabel+YOTool.h in Headers */,
 				CDCA93F6227148F600A38A3D /* YOMainTool.h in Headers */,
+				CD11728224EB703600E3A934 /* YOBaseScroll.h in Headers */,
 				CDCA93E72271430400A38A3D /* UIView+YOTool.h in Headers */,
+				CD11729624EB79D600E3A934 /* NSMutableArray+YOTool.h in Headers */,
 				CDCA941122717E0200A38A3D /* NSMutableDictionary+YOTool.h in Headers */,
 				CDCA9401227160F600A38A3D /* NSDictionary+YOLogTool.h in Headers */,
 				CDCA93FD22715E7F00A38A3D /* UIFont+YOTool.h in Headers */,
 				CDCA94212271821A00A38A3D /* UIButton+YOTool.h in Headers */,
 				CDCA94292271894200A38A3D /* YOPickView.h in Headers */,
+				CD11728E24EB752F00E3A934 /* YODatePickView.h in Headers */,
 				CDCA940D22717AF300A38A3D /* UIViewController+YOTool.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -527,16 +576,23 @@
 			files = (
 				CDCA941222717E0200A38A3D /* NSMutableDictionary+YOTool.m in Sources */,
 				CDCA93F7227148F600A38A3D /* YOMainTool.m in Sources */,
+				CD11729724EB79D600E3A934 /* NSMutableArray+YOTool.m in Sources */,
 				CDCA94062271616300A38A3D /* UIImage+YOTool.m in Sources */,
 				CDCA940E22717AF300A38A3D /* UIViewController+YOTool.m in Sources */,
 				CDCA9402227160F600A38A3D /* NSDictionary+YOLogTool.m in Sources */,
 				CDCA942A2271894200A38A3D /* YOPickView.m in Sources */,
 				CDCA941E2271818300A38A3D /* UITextField+YOTool.m in Sources */,
 				CDCA94222271821A00A38A3D /* UIButton+YOTool.m in Sources */,
+				CD11728B24EB70FD00E3A934 /* YOBaseCollCell.m in Sources */,
+				CD11728F24EB752F00E3A934 /* YODatePickView.m in Sources */,
 				CDCA93E82271430400A38A3D /* UIView+YOTool.m in Sources */,
+				CD11728324EB703600E3A934 /* YOBaseScroll.m in Sources */,
+				CD11727F24EB6F8600E3A934 /* YOBaseView.m in Sources */,
 				CDCA941A22717F9900A38A3D /* UILabel+YOTool.m in Sources */,
+				CD11729324EB779E00E3A934 /* YOLocationTool.m in Sources */,
 				CDCA93FE22715E7F00A38A3D /* UIFont+YOTool.m in Sources */,
 				CDCA941622717E8400A38A3D /* NSNull+YOTool.m in Sources */,
+				CD11728724EB709B00E3A934 /* YOBaseCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -743,6 +799,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.3;
 				OTHER_CFLAGS = "-fembed-bitcode";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = jhj.YOTool;
@@ -770,6 +827,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.3;
 				OTHER_CFLAGS = "-fembed-bitcode";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = jhj.YOTool;

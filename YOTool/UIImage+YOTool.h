@@ -22,6 +22,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)roundImageWithSize:(CGSize)size radius:(CGFloat)radius backColor:(UIColor *)backColor completion:(void(^)(UIImage *newImage))completion;
 
+/**
+ 修改图片尺寸
+ */
+- (UIImage *)changeSizeTo:(CGSize)newSize;
+
 @end
 
 NS_ASSUME_NONNULL_END

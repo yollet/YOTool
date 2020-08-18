@@ -66,6 +66,17 @@
 
 #pragma mark -- 数组输出 --
 @implementation NSArray (YOLogTool)
+
+- (id)yoFirstObject
+{
+    if (self && self.count) {
+        return [self firstObject];
+    }
+    else {
+        return nil;
+    }
+}
+
 - (NSString *)descriptionWithLocale:(id)locale
 {
     NSMutableString *string = [NSMutableString string];
