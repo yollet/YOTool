@@ -18,6 +18,11 @@
 #import "UILabel+YOTool.h"
 #import "UITextField+YOTool.h"
 #import "UIButton+YOTool.h"
+#import "YOPickView.h"
+#import "YOBaseView.h"
+#import "YOBaseScroll.h"
+#import "YOBaseCell.h"
+#import "YOBaseCollCell.h"
 #import "NSMutableArray+YOTool.h"
 
 CG_INLINE CGFloat FitX(CGFloat a)
