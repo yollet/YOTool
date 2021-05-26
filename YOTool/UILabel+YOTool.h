@@ -17,6 +17,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (instancetype)initWithFrame:(CGRect)frame textColor:(UIColor *)textColor font:(CGFloat)font textAlignment:(NSInteger)textAlignment;
 
+/**
+ 适配高度
+ */
+- (void)adaptiveHeight;
+
 @end
 
 NS_ASSUME_NONNULL_END

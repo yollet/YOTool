@@ -24,6 +24,9 @@
 #import "YOBaseCell.h"
 #import "YOBaseCollCell.h"
 #import "NSMutableArray+YOTool.h"
+#import "YOBaseField.h"
+#import "NSString+YOTool.h"
+#import "NSNumber+YOTool.h"
 
 CG_INLINE CGFloat FitX(CGFloat a)
 {

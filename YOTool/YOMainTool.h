@@ -35,6 +35,16 @@ typedef void(^CleanCacheBlock)(void);
 - (NSMutableAttributedString *)getAttStrWithStr:(NSString *)oldStr array:(NSArray *)strArray font:(UIFont *)font textColor:(UIColor *)textColor;
 
 /**
+字符串高亮并加下划线
+ */
+- (NSMutableAttributedString *)lineAttributedStringWithRang:(NSRange)rang str:(NSString *)str font:(UIFont *)font color:(UIColor *)color;
+
+/**
+ 字符串中间加横线
+ */
+- (NSAttributedString *)getAttDeleteWithStr:(NSString *)oldStr textColor:(UIColor *)textColor lineColor:(UIColor *)lineColor font:(UIFont *)font;
+
+/**
  判断是否是手机号
  */
 - (BOOL)isPhoneNum:(NSString *)phoneNum;
@@ -120,6 +130,21 @@ typedef void(^CleanCacheBlock)(void);
  字符串转json字符串（去转义）
  */
 - (NSString *)stringToJSONString:(NSString *)string;
+
+/**
+ urlEncode编码
+ */
+- (NSString *)urlEncodeStr:(NSString *)input;
+
+/**
+urlEncode解码
+*/
+- (NSString *)decoderUrlEncodeStr:(NSString *)input;
+
+/**
+ 生成二维码
+ */
+- (UIImage *)getTwoCodeImageWithString:(NSString *)string;
 
 @end
 

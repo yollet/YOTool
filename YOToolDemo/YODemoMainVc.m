@@ -9,6 +9,7 @@
 #import "YODemoMainVc.h"
 #import "UIView+YOTool.h"
 #import "SecondVc.h"
+#import <math.h>
 
 @interface YODemoMainVc () <UITextFieldDelegate>
 
@@ -27,6 +28,8 @@
     UIView *mineView = [[UIView alloc] initWithFrame:CGRectMake(22, 22, 222, 222)];
     mineView.backgroundColor = [UIColor cyanColor];
     [self.view addSubview:mineView];
+    
+    
     
 //    NSLog(@"%f", mineView.left);
 //    mineView.left -= 22;
@@ -49,6 +52,7 @@
     */
     UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
     [button setTitle:@"next" forState:UIControlStateNormal];
+    
     [button addTarget:self action:@selector(next) forControlEvents:UIControlEventTouchUpInside];
     button.frame = YORectMake(40, 400, 100, 30);
     [self.view addSubview:button];
@@ -79,8 +83,8 @@
     [self.view addSubview:label];
      */
     
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem frame:CGRectMake(40, 400, 200, 40) title:@"nfak" titleColor:[UIColor redColor] backColor:[UIColor greenColor] font:30 radius:5];
-    [self.view addSubview:btn];
+//    UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem frame:CGRectMake(40, 400, 200, 40) title:@"nfak" titleColor:[UIColor redColor] backColor:[UIColor greenColor] font:30 radius:5];
+//    [self.view addSubview:btn];
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
@@ -102,7 +106,15 @@
     [self.navigationController pushViewController:vc animated:YES];
      */
     
-    [self showAlertWithTitle:@"dsa" info:@"fwefw" leftStr:@"ssd" rightStr:@"vds" type:allRedType leftBlock:nil rightBlock:nil];
+//    [self showAlertWithTitle:@"dsa" info:@"fwefw" leftStr:@"ssd" rightStr:@"vds" type:allRedType leftBlock:nil rightBlock:nil];
+    
+    [self aaa:[NSNull null]];
+}
+
+- (void)aaa:(id)data
+{
+    NSString *str = data[3];
+    NSLog(@"%@", str);
 }
 
 /*

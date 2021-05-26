@@ -20,6 +20,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (BOOL)isEqualToString:(NSString *)string;
 
+- (id)objectForKeyedSubscript:(id)data;
+
+- (id)objectAtIndexedSubscript:(NSUInteger)idx;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -31,4 +31,14 @@
     return NO;
 }
 
+- (id)objectForKeyedSubscript:(id)data
+{
+    return [NSNull null];
+}
+
+- (id)objectAtIndexedSubscript:(NSUInteger)idx
+{
+    return [NSNull null];
+}
+  
 @end

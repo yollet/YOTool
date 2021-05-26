@@ -88,6 +88,23 @@
     return attributeString;
 }
 
+- (NSMutableAttributedString *)lineAttributedStringWithRang:(NSRange)rang str:(NSString *)str font:(UIFont *)font color:(UIColor *)color
+{
+    NSMutableAttributedString *attributeString  = [[NSMutableAttributedString alloc] initWithString:str];
+    [attributeString setAttributes:@{NSForegroundColorAttributeName:color,NSFontAttributeName:font,NSUnderlineStyleAttributeName:[NSNumber numberWithInteger:NSUnderlineStyleSingle]} range:rang];
+    return attributeString;
+}
+
+- (NSAttributedString *)getAttDeleteWithStr:(NSString *)oldStr textColor:(UIColor *)textColor lineColor:(UIColor *)lineColor font:(nonnull UIFont *)font
+{
+    return [[NSAttributedString alloc]initWithString:oldStr
+                                  attributes:
+    @{NSFontAttributeName:font,
+      NSForegroundColorAttributeName:textColor,
+      NSStrikethroughStyleAttributeName:@(NSUnderlineStyleSingle|NSUnderlinePatternSolid),
+      NSStrikethroughColorAttributeName:lineColor}];
+}
+
 - (NSString *)encryptPhoneNum:(NSString *)oldNum index:(NSInteger)index lenth:(NSInteger)lenth
 {
     if ([[YOMainTool sharedInstance] isPhoneNum:oldNum]) {
@@ -553,6 +570,34 @@
     [s replaceOccurrencesOfString:@"\r" withString:@"\\r" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [s length])];
     [s replaceOccurrencesOfString:@"\t" withString:@"\\t" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [s length])];
     return [NSString stringWithString:s];
+}
+
+#pragma mark -- urlEncode编码 --
+- (NSString *)urlEncodeStr:(NSString *)input
+{
+    NSString *charactersToEscape = @"?!@#$^&%*+,:;='\"`<>()[]{}/\\| ";
+    NSCharacterSet *allowedCharacters = [[NSCharacterSet characterSetWithCharactersInString:charactersToEscape] invertedSet];
+    NSString *upSign = [input stringByAddingPercentEncodingWithAllowedCharacters:allowedCharacters];
+    return upSign;
+}
+
+#pragma mark -- urlEncode解码 --
+- (NSString *)decoderUrlEncodeStr:(NSString *)input
+{
+    NSMutableString *outputStr = [NSMutableString stringWithString:input];
+    [outputStr replaceOccurrencesOfString:@"+" withString:@"" options:NSLiteralSearch range:NSMakeRange(0,[outputStr length])];
+    return [outputStr stringByRemovingPercentEncoding];
+}
+
+#pragma mark -- 生成二维码 --
+- (UIImage *)getTwoCodeImageWithString:(NSString *)string
+{
+    CIFilter *filter = [CIFilter filterWithName:@"CIQRCodeGenerator"];
+    [filter setDefaults];
+    NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
+    [filter setValue:data forKey:@"inputMessage"];
+    CIImage *image = [filter outputImage];
+    return [UIImage imageWithCIImage:image];
 }
 
 @end

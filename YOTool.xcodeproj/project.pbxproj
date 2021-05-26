@@ -22,6 +22,16 @@
 		CD11729324EB779E00E3A934 /* YOLocationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CD11729124EB779E00E3A934 /* YOLocationTool.m */; };
 		CD11729624EB79D600E3A934 /* NSMutableArray+YOTool.h in Headers */ = {isa = PBXBuildFile; fileRef = CD11729424EB79D600E3A934 /* NSMutableArray+YOTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD11729724EB79D600E3A934 /* NSMutableArray+YOTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CD11729524EB79D600E3A934 /* NSMutableArray+YOTool.m */; };
+		CD7B891C265E43E600BAAA5E /* YOCollectionFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = CD7B891A265E43E600BAAA5E /* YOCollectionFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD7B891D265E43E600BAAA5E /* YOCollectionFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7B891B265E43E600BAAA5E /* YOCollectionFlowLayout.m */; };
+		CD7B8920265E4ADB00BAAA5E /* NSNumber+YOTool.h in Headers */ = {isa = PBXBuildFile; fileRef = CD7B891E265E4ADB00BAAA5E /* NSNumber+YOTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD7B8921265E4ADB00BAAA5E /* NSNumber+YOTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7B891F265E4ADB00BAAA5E /* NSNumber+YOTool.m */; };
+		CD7B8924265E4B0700BAAA5E /* NSString+YOTool.h in Headers */ = {isa = PBXBuildFile; fileRef = CD7B8922265E4B0700BAAA5E /* NSString+YOTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD7B8925265E4B0700BAAA5E /* NSString+YOTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7B8923265E4B0700BAAA5E /* NSString+YOTool.m */; };
+		CD7B8928265E4F7D00BAAA5E /* YOBaseField.h in Headers */ = {isa = PBXBuildFile; fileRef = CD7B8926265E4F7D00BAAA5E /* YOBaseField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD7B8929265E4F7D00BAAA5E /* YOBaseField.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7B8927265E4F7D00BAAA5E /* YOBaseField.m */; };
+		CD7B892C265E50F500BAAA5E /* YORoundProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = CD7B892A265E50F500BAAA5E /* YORoundProgressView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD7B892D265E50F500BAAA5E /* YORoundProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7B892B265E50F500BAAA5E /* YORoundProgressView.m */; };
 		CDCA939A22713F1200A38A3D /* YOTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCA939022713F1200A38A3D /* YOTool.framework */; };
 		CDCA939F22713F1200A38A3D /* YOToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCA939E22713F1200A38A3D /* YOToolTests.m */; };
 		CDCA93A122713F1200A38A3D /* YOTool.h in Headers */ = {isa = PBXBuildFile; fileRef = CDCA939322713F1200A38A3D /* YOTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -102,6 +112,16 @@
 		CD11729124EB779E00E3A934 /* YOLocationTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YOLocationTool.m; sourceTree = "<group>"; };
 		CD11729424EB79D600E3A934 /* NSMutableArray+YOTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+YOTool.h"; sourceTree = "<group>"; };
 		CD11729524EB79D600E3A934 /* NSMutableArray+YOTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+YOTool.m"; sourceTree = "<group>"; };
+		CD7B891A265E43E600BAAA5E /* YOCollectionFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YOCollectionFlowLayout.h; sourceTree = "<group>"; };
+		CD7B891B265E43E600BAAA5E /* YOCollectionFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YOCollectionFlowLayout.m; sourceTree = "<group>"; };
+		CD7B891E265E4ADB00BAAA5E /* NSNumber+YOTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNumber+YOTool.h"; sourceTree = "<group>"; };
+		CD7B891F265E4ADB00BAAA5E /* NSNumber+YOTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+YOTool.m"; sourceTree = "<group>"; };
+		CD7B8922265E4B0700BAAA5E /* NSString+YOTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+YOTool.h"; sourceTree = "<group>"; };
+		CD7B8923265E4B0700BAAA5E /* NSString+YOTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+YOTool.m"; sourceTree = "<group>"; };
+		CD7B8926265E4F7D00BAAA5E /* YOBaseField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YOBaseField.h; sourceTree = "<group>"; };
+		CD7B8927265E4F7D00BAAA5E /* YOBaseField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YOBaseField.m; sourceTree = "<group>"; };
+		CD7B892A265E50F500BAAA5E /* YORoundProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YORoundProgressView.h; sourceTree = "<group>"; };
+		CD7B892B265E50F500BAAA5E /* YORoundProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YORoundProgressView.m; sourceTree = "<group>"; };
 		CD92BA9122731E0700B44FD7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		CDCA939022713F1200A38A3D /* YOTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YOTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDCA939322713F1200A38A3D /* YOTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YOTool.h; sourceTree = "<group>"; };
@@ -258,6 +278,10 @@
 				CDCA941C2271818300A38A3D /* UITextField+YOTool.m */,
 				CDCA941F2271821A00A38A3D /* UIButton+YOTool.h */,
 				CDCA94202271821A00A38A3D /* UIButton+YOTool.m */,
+				CD7B891E265E4ADB00BAAA5E /* NSNumber+YOTool.h */,
+				CD7B891F265E4ADB00BAAA5E /* NSNumber+YOTool.m */,
+				CD7B8922265E4B0700BAAA5E /* NSString+YOTool.h */,
+				CD7B8923265E4B0700BAAA5E /* NSString+YOTool.m */,
 				CDCA94272271894200A38A3D /* YOPickView.h */,
 				CDCA94282271894200A38A3D /* YOPickView.m */,
 				CD11727C24EB6F8600E3A934 /* YOBaseView.h */,
@@ -268,10 +292,16 @@
 				CD11728524EB709B00E3A934 /* YOBaseCell.m */,
 				CD11728824EB70FD00E3A934 /* YOBaseCollCell.h */,
 				CD11728924EB70FD00E3A934 /* YOBaseCollCell.m */,
+				CD7B8926265E4F7D00BAAA5E /* YOBaseField.h */,
+				CD7B8927265E4F7D00BAAA5E /* YOBaseField.m */,
 				CD11728C24EB752F00E3A934 /* YODatePickView.h */,
 				CD11728D24EB752F00E3A934 /* YODatePickView.m */,
 				CD11729024EB779E00E3A934 /* YOLocationTool.h */,
 				CD11729124EB779E00E3A934 /* YOLocationTool.m */,
+				CD7B891A265E43E600BAAA5E /* YOCollectionFlowLayout.h */,
+				CD7B891B265E43E600BAAA5E /* YOCollectionFlowLayout.m */,
+				CD7B892A265E50F500BAAA5E /* YORoundProgressView.h */,
+				CD7B892B265E50F500BAAA5E /* YORoundProgressView.m */,
 				CDCA939422713F1200A38A3D /* Info.plist */,
 			);
 			path = YOTool;
@@ -340,6 +370,7 @@
 			files = (
 				CDCA941522717E8400A38A3D /* NSNull+YOTool.h in Headers */,
 				CDCA941D2271818300A38A3D /* UITextField+YOTool.h in Headers */,
+				CD7B8928265E4F7D00BAAA5E /* YOBaseField.h in Headers */,
 				CD11727E24EB6F8600E3A934 /* YOBaseView.h in Headers */,
 				CD11728A24EB70FD00E3A934 /* YOBaseCollCell.h in Headers */,
 				CDCA94052271616300A38A3D /* UIImage+YOTool.h in Headers */,
@@ -347,14 +378,18 @@
 				CD11728624EB709B00E3A934 /* YOBaseCell.h in Headers */,
 				CD11729224EB779E00E3A934 /* YOLocationTool.h in Headers */,
 				CDCA941922717F9900A38A3D /* UILabel+YOTool.h in Headers */,
+				CD7B8924265E4B0700BAAA5E /* NSString+YOTool.h in Headers */,
 				CDCA93F6227148F600A38A3D /* YOMainTool.h in Headers */,
 				CD11728224EB703600E3A934 /* YOBaseScroll.h in Headers */,
 				CDCA93E72271430400A38A3D /* UIView+YOTool.h in Headers */,
 				CD11729624EB79D600E3A934 /* NSMutableArray+YOTool.h in Headers */,
 				CDCA941122717E0200A38A3D /* NSMutableDictionary+YOTool.h in Headers */,
+				CD7B891C265E43E600BAAA5E /* YOCollectionFlowLayout.h in Headers */,
 				CDCA9401227160F600A38A3D /* NSDictionary+YOLogTool.h in Headers */,
 				CDCA93FD22715E7F00A38A3D /* UIFont+YOTool.h in Headers */,
+				CD7B892C265E50F500BAAA5E /* YORoundProgressView.h in Headers */,
 				CDCA94212271821A00A38A3D /* UIButton+YOTool.h in Headers */,
+				CD7B8920265E4ADB00BAAA5E /* NSNumber+YOTool.h in Headers */,
 				CDCA94292271894200A38A3D /* YOPickView.h in Headers */,
 				CD11728E24EB752F00E3A934 /* YODatePickView.h in Headers */,
 				CDCA940D22717AF300A38A3D /* UIViewController+YOTool.h in Headers */,
@@ -575,15 +610,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDCA941222717E0200A38A3D /* NSMutableDictionary+YOTool.m in Sources */,
+				CD7B891D265E43E600BAAA5E /* YOCollectionFlowLayout.m in Sources */,
 				CDCA93F7227148F600A38A3D /* YOMainTool.m in Sources */,
 				CD11729724EB79D600E3A934 /* NSMutableArray+YOTool.m in Sources */,
 				CDCA94062271616300A38A3D /* UIImage+YOTool.m in Sources */,
 				CDCA940E22717AF300A38A3D /* UIViewController+YOTool.m in Sources */,
 				CDCA9402227160F600A38A3D /* NSDictionary+YOLogTool.m in Sources */,
+				CD7B8925265E4B0700BAAA5E /* NSString+YOTool.m in Sources */,
+				CD7B892D265E50F500BAAA5E /* YORoundProgressView.m in Sources */,
 				CDCA942A2271894200A38A3D /* YOPickView.m in Sources */,
 				CDCA941E2271818300A38A3D /* UITextField+YOTool.m in Sources */,
 				CDCA94222271821A00A38A3D /* UIButton+YOTool.m in Sources */,
+				CD7B8921265E4ADB00BAAA5E /* NSNumber+YOTool.m in Sources */,
 				CD11728B24EB70FD00E3A934 /* YOBaseCollCell.m in Sources */,
+				CD7B8929265E4F7D00BAAA5E /* YOBaseField.m in Sources */,
 				CD11728F24EB752F00E3A934 /* YODatePickView.m in Sources */,
 				CDCA93E82271430400A38A3D /* UIView+YOTool.m in Sources */,
 				CD11728324EB703600E3A934 /* YOBaseScroll.m in Sources */,
@@ -874,7 +914,9 @@
 			baseConfigurationReference = 65E81132B83C257BEDE99DD0 /* Pods-YOToolDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J4FP9RY6SG;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/YOToolDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = YOToolDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -885,6 +927,7 @@
 				OTHER_LDFLAGS = "-all_load\n";
 				PRODUCT_BUNDLE_IDENTIFIER = jhj.YOToolDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -894,7 +937,9 @@
 			baseConfigurationReference = 418FBD89FA842A5F9303EB6C /* Pods-YOToolDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J4FP9RY6SG;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/YOToolDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = YOToolDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -905,6 +950,7 @@
 				OTHER_LDFLAGS = "-all_load\n";
 				PRODUCT_BUNDLE_IDENTIFIER = jhj.YOToolDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -19,6 +19,21 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) CGFloat myTWidth;
 @property (nonatomic, assign) CGFloat myTHeight;
 
+/**
+ 局部圆角
+ */
+- (void)setRadiusWithTopLeft:(BOOL)topLeft topRight:(BOOL)topRight bottomLeft:(BOOL)bottomLeft bottomRight:(BOOL)bottomRight radius:(CGFloat)radius;
+
+/**
+ 加阴影
+ */
+- (void)addShadowWithColor:(UIColor *)color height:(CGFloat)height shadowOpacity:(CGFloat)shadowOpacity radius:(CGFloat)radius;
+
+/**
+ 截图
+ */
+- (UIImage *)screenshotView;
+
 @end
 
 NS_ASSUME_NONNULL_END

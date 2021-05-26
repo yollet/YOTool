@@ -30,4 +30,10 @@
     return self;
 }
 
+- (void)adaptiveHeight
+{
+    CGRect bounds = [self.text boundingRectWithSize:CGSizeMake(self.frame.size.width, 1000) options:NSStringDrawingUsesLineFragmentOrigin attributes:[NSDictionary dictionaryWithObject:self.font forKey:NSFontAttributeName] context:nil];
+    self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, self.frame.size.width, bounds.size.height + 5);
+}
+
 @end
