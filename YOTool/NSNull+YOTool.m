@@ -40,5 +40,10 @@
 {
     return [NSNull null];
 }
+
+- (NSInteger)count
+{
+    return 0;
+}
   
 @end
