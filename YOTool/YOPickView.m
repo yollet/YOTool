@@ -38,7 +38,7 @@
         [pickBackView addSubview:topView];
         
         self.hidButton = [UIButton buttonWithType:UIButtonTypeSystem];
-        self.hidButton.frame = CGRectMake(topView.right - FitX(20) - 50, 0, 50, FitY(30));
+        self.hidButton.frame = CGRectMake(topView.yo_right - FitX(20) - 50, 0, 50, FitY(30));
         //        [self.hidButton setBackgroundColor:[UIColor cyanColor]];
         [self.hidButton setTitle:@"完成" forState:UIControlStateNormal];
         [self.hidButton setTitleColor:[UIColor colorWithRed:77 / 255.0 green:131 / 255.0 blue:255 / 255.0 alpha:1] forState:UIControlStateNormal];

@@ -8,6 +8,7 @@
 //
 
 #import "YODatePickView.h"
+#import "YOTool.h"
 
 @implementation YODatePickView
 
@@ -38,7 +39,7 @@
 {
     self = [self initWithFrame:frame];
     if (self) {
-        self.datePick = [[UIDatePicker alloc] initWithFrame:CGRectMake(0, self.leftBtn.bottom + 10, _myWidth, self.bottomView.myTHeight - _bottomHeight - _leftBtn.bottom - 10)];
+        self.datePick = [[UIDatePicker alloc] initWithFrame:CGRectMake(0, self.leftBtn.yo_bottom + 10, _myWidth, self.bottomView.yo_height - _bottomHeight - _leftBtn.yo_bottom - 10)];
         
         // 设置时区
         self.datePick.locale = [NSLocale localeWithLocaleIdentifier:@"zh-CN"];

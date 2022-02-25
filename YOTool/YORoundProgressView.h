@@ -4,15 +4,17 @@
 //
 //  Created by jhj on 2021/5/26.
 //  Copyright © 2021 jhj. All rights reserved.
-//  内切圆进度条
+//  圆环进度条  圆心为bound的中心
 
-#import <YOTool/YOTool.h>
+#import "YOBaseView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface YORoundProgressView : YOBaseView
 
+// 当前进度
 @property (nonatomic, assign) CGFloat progress;
+// 环形进度宽度
 @property (nonatomic, assign) CGFloat lineWidth;
 // 进度条背景色
 @property (nonatomic, strong) UIColor *lineBackColor;

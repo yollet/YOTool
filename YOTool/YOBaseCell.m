@@ -16,7 +16,7 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         _myWidth = [UIScreen mainScreen].bounds.size.width;
-        _myHeight = self.contentView.myTHeight;
+        _myHeight = self.contentView.yo_height;
     }
     return self;
 }

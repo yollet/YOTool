@@ -32,6 +32,9 @@
 		CD7B8929265E4F7D00BAAA5E /* YOBaseField.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7B8927265E4F7D00BAAA5E /* YOBaseField.m */; };
 		CD7B892C265E50F500BAAA5E /* YORoundProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = CD7B892A265E50F500BAAA5E /* YORoundProgressView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD7B892D265E50F500BAAA5E /* YORoundProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7B892B265E50F500BAAA5E /* YORoundProgressView.m */; };
+		CDAE88D727C62FA600553539 /* RoundTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDAE88D627C62FA600553539 /* RoundTextView.m */; };
+		CDC0133A27C71B060065417D /* YORoundTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = CDC0133827C71B060065417D /* YORoundTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDC0133B27C71B060065417D /* YORoundTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC0133927C71B060065417D /* YORoundTextView.m */; };
 		CDCA939A22713F1200A38A3D /* YOTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCA939022713F1200A38A3D /* YOTool.framework */; };
 		CDCA939F22713F1200A38A3D /* YOToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCA939E22713F1200A38A3D /* YOToolTests.m */; };
 		CDCA93A122713F1200A38A3D /* YOTool.h in Headers */ = {isa = PBXBuildFile; fileRef = CDCA939322713F1200A38A3D /* YOTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -68,6 +71,8 @@
 		CDCA94222271821A00A38A3D /* UIButton+YOTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCA94202271821A00A38A3D /* UIButton+YOTool.m */; };
 		CDCA94292271894200A38A3D /* YOPickView.h in Headers */ = {isa = PBXBuildFile; fileRef = CDCA94272271894200A38A3D /* YOPickView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CDCA942A2271894200A38A3D /* YOPickView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCA94282271894200A38A3D /* YOPickView.m */; };
+		CDDCDDB527C4BB3900FF9042 /* YORoundExerciseProgress.h in Headers */ = {isa = PBXBuildFile; fileRef = CDDCDDB327C4BB3900FF9042 /* YORoundExerciseProgress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDDCDDB627C4BB3900FF9042 /* YORoundExerciseProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDCDDB427C4BB3900FF9042 /* YORoundExerciseProgress.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +128,10 @@
 		CD7B892A265E50F500BAAA5E /* YORoundProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YORoundProgressView.h; sourceTree = "<group>"; };
 		CD7B892B265E50F500BAAA5E /* YORoundProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YORoundProgressView.m; sourceTree = "<group>"; };
 		CD92BA9122731E0700B44FD7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CDAE88D527C62FA600553539 /* RoundTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoundTextView.h; sourceTree = "<group>"; };
+		CDAE88D627C62FA600553539 /* RoundTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoundTextView.m; sourceTree = "<group>"; };
+		CDC0133827C71B060065417D /* YORoundTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YORoundTextView.h; sourceTree = "<group>"; };
+		CDC0133927C71B060065417D /* YORoundTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YORoundTextView.m; sourceTree = "<group>"; };
 		CDCA939022713F1200A38A3D /* YOTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YOTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDCA939322713F1200A38A3D /* YOTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YOTool.h; sourceTree = "<group>"; };
 		CDCA939422713F1200A38A3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -171,6 +180,8 @@
 		CDCA94202271821A00A38A3D /* UIButton+YOTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+YOTool.m"; sourceTree = "<group>"; };
 		CDCA94272271894200A38A3D /* YOPickView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YOPickView.h; sourceTree = "<group>"; };
 		CDCA94282271894200A38A3D /* YOPickView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YOPickView.m; sourceTree = "<group>"; };
+		CDDCDDB327C4BB3900FF9042 /* YORoundExerciseProgress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YORoundExerciseProgress.h; sourceTree = "<group>"; };
+		CDDCDDB427C4BB3900FF9042 /* YORoundExerciseProgress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YORoundExerciseProgress.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -302,6 +313,10 @@
 				CD7B891B265E43E600BAAA5E /* YOCollectionFlowLayout.m */,
 				CD7B892A265E50F500BAAA5E /* YORoundProgressView.h */,
 				CD7B892B265E50F500BAAA5E /* YORoundProgressView.m */,
+				CDC0133827C71B060065417D /* YORoundTextView.h */,
+				CDC0133927C71B060065417D /* YORoundTextView.m */,
+				CDDCDDB327C4BB3900FF9042 /* YORoundExerciseProgress.h */,
+				CDDCDDB427C4BB3900FF9042 /* YORoundExerciseProgress.m */,
 				CDCA939422713F1200A38A3D /* Info.plist */,
 			);
 			path = YOTool;
@@ -323,6 +338,8 @@
 				CDCA93B12271415300A38A3D /* AppDelegate.m */,
 				CDCA93E22271421A00A38A3D /* YODemoMainVc.h */,
 				CDCA93E32271421A00A38A3D /* YODemoMainVc.m */,
+				CDAE88D527C62FA600553539 /* RoundTextView.h */,
+				CDAE88D627C62FA600553539 /* RoundTextView.m */,
 				CDCA93F8227157DD00A38A3D /* SecondVc.h */,
 				CDCA93F9227157DD00A38A3D /* SecondVc.m */,
 				CDCA93E92271439700A38A3D /* PrefixHeader.pch */,
@@ -392,6 +409,8 @@
 				CD7B8920265E4ADB00BAAA5E /* NSNumber+YOTool.h in Headers */,
 				CDCA94292271894200A38A3D /* YOPickView.h in Headers */,
 				CD11728E24EB752F00E3A934 /* YODatePickView.h in Headers */,
+				CDC0133A27C71B060065417D /* YORoundTextView.h in Headers */,
+				CDDCDDB527C4BB3900FF9042 /* YORoundExerciseProgress.h in Headers */,
 				CDCA940D22717AF300A38A3D /* UIViewController+YOTool.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -613,6 +632,7 @@
 				CD7B891D265E43E600BAAA5E /* YOCollectionFlowLayout.m in Sources */,
 				CDCA93F7227148F600A38A3D /* YOMainTool.m in Sources */,
 				CD11729724EB79D600E3A934 /* NSMutableArray+YOTool.m in Sources */,
+				CDC0133B27C71B060065417D /* YORoundTextView.m in Sources */,
 				CDCA94062271616300A38A3D /* UIImage+YOTool.m in Sources */,
 				CDCA940E22717AF300A38A3D /* UIViewController+YOTool.m in Sources */,
 				CDCA9402227160F600A38A3D /* NSDictionary+YOLogTool.m in Sources */,
@@ -630,6 +650,7 @@
 				CD11727F24EB6F8600E3A934 /* YOBaseView.m in Sources */,
 				CDCA941A22717F9900A38A3D /* UILabel+YOTool.m in Sources */,
 				CD11729324EB779E00E3A934 /* YOLocationTool.m in Sources */,
+				CDDCDDB627C4BB3900FF9042 /* YORoundExerciseProgress.m in Sources */,
 				CDCA93FE22715E7F00A38A3D /* UIFont+YOTool.m in Sources */,
 				CDCA941622717E8400A38A3D /* NSNull+YOTool.m in Sources */,
 				CD11728724EB709B00E3A934 /* YOBaseCell.m in Sources */,
@@ -649,6 +670,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDCA93C02271415400A38A3D /* main.m in Sources */,
+				CDAE88D727C62FA600553539 /* RoundTextView.m in Sources */,
 				CDCA93B22271415300A38A3D /* AppDelegate.m in Sources */,
 				CDCA93FA227157DD00A38A3D /* SecondVc.m in Sources */,
 				CDCA93E42271421A00A38A3D /* YODemoMainVc.m in Sources */,

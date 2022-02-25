@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "YOTool"
-  spec.version      = "1.3.1"
+  spec.version      = "1.4"
   spec.summary      = "A practical tool."
 
   # This description is used to generate tags and improve search results.
@@ -80,7 +80,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/yollet/YOTool.git", :tag => "1.3.1" }
+  spec.source       = { :git => "https://github.com/yollet/YOTool.git", :tag => "1.4" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

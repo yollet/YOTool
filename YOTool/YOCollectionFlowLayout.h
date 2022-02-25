@@ -8,7 +8,7 @@
 
 // 用来做简单的缩放collect
 
-#import <YOTool.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

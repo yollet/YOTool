@@ -6,7 +6,7 @@
 //  Copyright © 2020 jhj. All rights reserved.
 //
 
-#import <YOTool/YOTool.h>
+#import "YOBaseView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

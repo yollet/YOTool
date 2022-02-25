@@ -8,16 +8,50 @@
 
 #import <UIKit/UIKit.h>
 
+#define yo_weakify(object) autoreleasepool   {} __weak  typeof(object) weak##object = object;
+#define yo_strongify(object) autoreleasepool {} __strong  typeof(weak##object) object = weak##object;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UIView (YOTool)
 
-@property (nonatomic, assign) CGFloat left;
-@property (nonatomic, assign) CGFloat right;
-@property (nonatomic, assign) CGFloat top;
-@property (nonatomic, assign) CGFloat bottom;
-@property (nonatomic, assign) CGFloat myTWidth;
-@property (nonatomic, assign) CGFloat myTHeight;
+@property (nonatomic, assign) CGFloat yo_left;
+@property (nonatomic, assign) CGFloat yo_right;
+@property (nonatomic, assign) CGFloat yo_top;
+@property (nonatomic, assign) CGFloat yo_bottom;
+@property (nonatomic, assign) CGFloat yo_width;
+@property (nonatomic, assign) CGFloat yo_height;
+
+@property (nonatomic) CGFloat yo_centerX;      
+@property (nonatomic) CGFloat yo_centerY;
+
+@property (readonly) UIViewController *yo_viewController;  //self Responder UIViewControler
+
+/*
+   示例链接编程
+   self.yo_width(100).yo_height(100).yo_left(10).yo_top(10)
+*/
+- (UIView * (^)(CGFloat top))yo_setTop;            ///< set frame y
+- (UIView * (^)(CGFloat bottom))yo_setBottom;      ///< set frame y
+- (UIView * (^)(CGFloat left))yo_setLeft;          ///< set frame x
+- (UIView * (^)(CGFloat right))yo_setRight;        ///< set frame x
+- (UIView * (^)(CGFloat width))yo_setWidth;        ///< set frame width
+- (UIView * (^)(CGFloat height))yo_setHeight;      ///< set frame height
+- (UIView * (^)(CGFloat x))yo_setCenterX;         ///< set center
+- (UIView * (^)(CGFloat y))yo_setCenterY;         ///< set center
+///
+- (UIView * (^)(CGFloat top))yo_FTop;            ///< set frame y
+- (UIView * (^)(CGFloat bottom))yo_FBottom;      ///< set frame y
+- (UIView * (^)(CGFloat left))yo_FLeft;          ///< set frame x
+- (UIView * (^)(CGFloat right))yo_FRight;        ///< set frame x
+- (UIView * (^)(CGFloat width))yo_FWidth;        ///< set frame width
+- (UIView * (^)(CGFloat height))yo_FHeight;      ///< set frame height
+
+//// 对全面屏适配 ()
+//@property (readonly) CGFloat yo_safeTop;
+//@property (readonly) CGFloat yo_safeBottom;
+//@property (readonly) CGFloat yo_safeLeft;
+//@property (readonly) CGFloat yo_safeRight;
 
 /**
  局部圆角
