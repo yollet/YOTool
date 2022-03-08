@@ -208,7 +208,7 @@
     NSMutableString *kksstr = [[NSMutableString alloc] init];
     NSMutableArray *array = [NSMutableArray arrayWithCapacity:10];
     NSMutableString *strMu = [[NSMutableString alloc] init];
-    for(int i =0; i < [emojiStr length]; i++)
+    for(int i = 0; i < [emojiStr length]; i++)
     {
         tempStr = [emojiStr substringWithRange:NSMakeRange(i, 1)];
         [strMu appendString:tempStr];

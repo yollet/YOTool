@@ -102,7 +102,7 @@
     
     
     angle = M_PI / 2.0 - angle;
-    angle = angle > 0 ?  angle : angle + 2 * M_PI;
+    angle = angle > 0 ?  angle : angle + 2 * M_PI; // 修正坐标系
     
 //    NSLog(@"ANGLE == %f", angle / M_PI * 180);
     
@@ -142,7 +142,7 @@
         }
     }
 
-    if (fabs(self.oldAngle - angle) < M_PI / 2.0) {
+    if (fabs(self.oldAngle - angle) < M_PI / 2.0) { // 限制单次移动的最大角 超出视为回到初始点
         self.sliderView.transform = trans;
         self.oldAngle = angle;
         

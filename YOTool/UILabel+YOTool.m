@@ -30,10 +30,18 @@
     return self;
 }
 
-- (void)adaptiveHeight
+- (CGFloat)adaptiveHeight
 {
     CGRect bounds = [self.text boundingRectWithSize:CGSizeMake(self.frame.size.width, 1000) options:NSStringDrawingUsesLineFragmentOrigin attributes:[NSDictionary dictionaryWithObject:self.font forKey:NSFontAttributeName] context:nil];
-    self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, self.frame.size.width, bounds.size.height + 5);
+    self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, self.frame.size.width, bounds.size.height);
+    return bounds.size.height;
+}
+
+- (CGFloat)adaptiveWidth
+{
+    CGRect bounds = [self.text boundingRectWithSize:CGSizeMake(1000, self.frame.size.height) options:NSStringDrawingUsesLineFragmentOrigin attributes:[NSDictionary dictionaryWithObject:self.font forKey:NSFontAttributeName] context:nil];
+    self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y,  bounds.size.width, self.frame.size.height);
+    return bounds.size.width;
 }
 
 @end

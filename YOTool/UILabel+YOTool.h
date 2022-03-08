@@ -20,7 +20,12 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  适配高度
  */
-- (void)adaptiveHeight;
+- (CGFloat)adaptiveHeight;
+
+/**
+ 适配宽度
+ */
+- (CGFloat)adaptiveWidth;
 
 @end
 

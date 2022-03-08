@@ -6,7 +6,7 @@
 //  Copyright © 2021 jhj. All rights reserved.
 //
 
-// 用来做简单的缩放collect
+// 用来做简单的根据移动距离缩放collect
 
 #import <UIKit/UIKit.h>
 
