@@ -75,7 +75,6 @@
     [alertVC addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
         textField.placeholder = placeholder;
         textField.keyboardType = UIKeyboardTypePhonePad;
-        textField.delegate = self;
     }];
     
     UIAlertAction *leftAct = nil;
@@ -115,30 +114,6 @@
     [self presentViewController:alertVC animated:YES completion:nil];
 }
 
-- (BOOL)textFieldShouldReturn:(UITextField *)textField
-{
-    [textField resignFirstResponder];
-    return YES;
-}
 
-- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
-{
-    YOBaseField *field = (YOBaseField *)textField;
-    if (!field.maxLenth || field.maxLenth == 0) {
-        return YES;
-    }
-    NSString *fieldText = [NSString stringWithFormat:@"%@%@", field.text, string];
-    if ([string isEqualToString:@""]) {
-        if (fieldText.length > 1) {
-            fieldText = [fieldText substringToIndex:fieldText.length - 1];
-        }
-    }
-    if (fieldText.length <= field.maxLenth) {
-        return YES;
-    }
-    else {
-        return NO;
-    }
-}
 
 @end

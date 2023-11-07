@@ -23,7 +23,7 @@
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction:)];
         [self addGestureRecognizer:tap];
         
-        UIView *pickBackView = [[UIView alloc] initWithFrame:CGRectMake(0, frame.size.height - [YOMainTool sharedInstance].bottomHeight - FitY(250), frame.size.width, FitY(250))];
+        UIView *pickBackView = [[UIView alloc] initWithFrame:CGRectMake(0, frame.size.height - [YOMainTool sharedInstance].bottomHeight - FitY(250), frame.size.width, FitY(250) + [YOMainTool sharedInstance].bottomHeight)];
         pickBackView.backgroundColor = [UIColor whiteColor];
         [self addSubview:pickBackView];
         

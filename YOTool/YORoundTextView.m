@@ -67,6 +67,7 @@ typedef struct GlyphArcInfo {
 {
     _roundString = roundString;
     self.attString = [self getAttStringWithString:roundString];
+    [self setNeedsDisplay];
 }
 
 - (void)setAttString:(NSAttributedString *)attString

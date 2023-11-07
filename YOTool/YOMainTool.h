@@ -35,6 +35,11 @@ typedef void(^CleanCacheBlock)(void);
 - (NSMutableAttributedString *)getAttStrWithStr:(NSString *)oldStr array:(NSArray *)strArray font:(UIFont *)font textColor:(UIColor *)textColor;
 
 /**
+ 高亮数字
+ */
+- (NSMutableAttributedString *)highlightNumWithStr:(NSString *)oldStr font:(UIFont *)font textColor:(UIColor *)textColor;
+
+/**
 字符串高亮并加下划线
  */
 - (NSMutableAttributedString *)lineAttributedStringWithRang:(NSRange)rang str:(NSString *)str font:(UIFont *)font color:(UIColor *)color;
@@ -48,6 +53,11 @@ typedef void(^CleanCacheBlock)(void);
  判断是否是手机号
  */
 - (BOOL)isPhoneNum:(NSString *)phoneNum;
+
+/**
+校验密码
+ */
+- (BOOL)passwordIsOk:(NSString *)password;
 
 /**
  手机号中间加密

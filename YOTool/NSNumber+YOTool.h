@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSString *)integerString;
 
+- (BOOL)isNull;
+
 @end
 
 NS_ASSUME_NONNULL_END

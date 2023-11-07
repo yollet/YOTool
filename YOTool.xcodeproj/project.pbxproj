@@ -22,6 +22,10 @@
 		CD11729324EB779E00E3A934 /* YOLocationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CD11729124EB779E00E3A934 /* YOLocationTool.m */; };
 		CD11729624EB79D600E3A934 /* NSMutableArray+YOTool.h in Headers */ = {isa = PBXBuildFile; fileRef = CD11729424EB79D600E3A934 /* NSMutableArray+YOTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD11729724EB79D600E3A934 /* NSMutableArray+YOTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CD11729524EB79D600E3A934 /* NSMutableArray+YOTool.m */; };
+		CD2F09CA2A0B8BF3002FA0AA /* 21510.svg in Resources */ = {isa = PBXBuildFile; fileRef = CD2F09C92A0B8BF3002FA0AA /* 21510.svg */; };
+		CD2F09D52A0B98E9002FA0AA /* Cycling_Lambie.svg in Resources */ = {isa = PBXBuildFile; fileRef = CD2F09D42A0B98E9002FA0AA /* Cycling_Lambie.svg */; };
+		CD2F09D72A0B9ACD002FA0AA /* animation-extRef-image2.svg in Resources */ = {isa = PBXBuildFile; fileRef = CD2F09D62A0B9ACD002FA0AA /* animation-extRef-image2.svg */; };
+		CD2F09D92A0B9CF3002FA0AA /* parent-clip.svg in Resources */ = {isa = PBXBuildFile; fileRef = CD2F09D82A0B9CF3002FA0AA /* parent-clip.svg */; };
 		CD7B891C265E43E600BAAA5E /* YOCollectionFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = CD7B891A265E43E600BAAA5E /* YOCollectionFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD7B891D265E43E600BAAA5E /* YOCollectionFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7B891B265E43E600BAAA5E /* YOCollectionFlowLayout.m */; };
 		CD7B8920265E4ADB00BAAA5E /* NSNumber+YOTool.h in Headers */ = {isa = PBXBuildFile; fileRef = CD7B891E265E4ADB00BAAA5E /* NSNumber+YOTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -33,6 +37,8 @@
 		CD7B892C265E50F500BAAA5E /* YORoundProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = CD7B892A265E50F500BAAA5E /* YORoundProgressView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD7B892D265E50F500BAAA5E /* YORoundProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7B892B265E50F500BAAA5E /* YORoundProgressView.m */; };
 		CDAE88D727C62FA600553539 /* RoundTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDAE88D627C62FA600553539 /* RoundTextView.m */; };
+		CDBAABC72A9DCEB100AF077B /* YOButton.h in Headers */ = {isa = PBXBuildFile; fileRef = CDBAABC52A9DCEB100AF077B /* YOButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDBAABC82A9DCEB100AF077B /* YOButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBAABC62A9DCEB100AF077B /* YOButton.m */; };
 		CDC0133A27C71B060065417D /* YORoundTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = CDC0133827C71B060065417D /* YORoundTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CDC0133B27C71B060065417D /* YORoundTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC0133927C71B060065417D /* YORoundTextView.m */; };
 		CDCA939A22713F1200A38A3D /* YOTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCA939022713F1200A38A3D /* YOTool.framework */; };
@@ -119,6 +125,11 @@
 		CD11729124EB779E00E3A934 /* YOLocationTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YOLocationTool.m; sourceTree = "<group>"; };
 		CD11729424EB79D600E3A934 /* NSMutableArray+YOTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+YOTool.h"; sourceTree = "<group>"; };
 		CD11729524EB79D600E3A934 /* NSMutableArray+YOTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+YOTool.m"; sourceTree = "<group>"; };
+		CD2F09C92A0B8BF3002FA0AA /* 21510.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 21510.svg; sourceTree = "<group>"; };
+		CD2F09CB2A0B8EA0002FA0AA /* libSVGKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSVGKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD2F09D42A0B98E9002FA0AA /* Cycling_Lambie.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Cycling_Lambie.svg; sourceTree = "<group>"; };
+		CD2F09D62A0B9ACD002FA0AA /* animation-extRef-image2.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "animation-extRef-image2.svg"; sourceTree = "<group>"; };
+		CD2F09D82A0B9CF3002FA0AA /* parent-clip.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "parent-clip.svg"; sourceTree = "<group>"; };
 		CD7B891A265E43E600BAAA5E /* YOCollectionFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YOCollectionFlowLayout.h; sourceTree = "<group>"; };
 		CD7B891B265E43E600BAAA5E /* YOCollectionFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YOCollectionFlowLayout.m; sourceTree = "<group>"; };
 		CD7B891E265E4ADB00BAAA5E /* NSNumber+YOTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNumber+YOTool.h"; sourceTree = "<group>"; };
@@ -132,6 +143,8 @@
 		CD92BA9122731E0700B44FD7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		CDAE88D527C62FA600553539 /* RoundTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoundTextView.h; sourceTree = "<group>"; };
 		CDAE88D627C62FA600553539 /* RoundTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoundTextView.m; sourceTree = "<group>"; };
+		CDBAABC52A9DCEB100AF077B /* YOButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YOButton.h; sourceTree = "<group>"; };
+		CDBAABC62A9DCEB100AF077B /* YOButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YOButton.m; sourceTree = "<group>"; };
 		CDC0133827C71B060065417D /* YORoundTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YORoundTextView.h; sourceTree = "<group>"; };
 		CDC0133927C71B060065417D /* YORoundTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YORoundTextView.m; sourceTree = "<group>"; };
 		CDCA939022713F1200A38A3D /* YOTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YOTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -297,6 +310,8 @@
 				CD7B891F265E4ADB00BAAA5E /* NSNumber+YOTool.m */,
 				CD7B8922265E4B0700BAAA5E /* NSString+YOTool.h */,
 				CD7B8923265E4B0700BAAA5E /* NSString+YOTool.m */,
+				CDBAABC52A9DCEB100AF077B /* YOButton.h */,
+				CDBAABC62A9DCEB100AF077B /* YOButton.m */,
 				CDCA94272271894200A38A3D /* YOPickView.h */,
 				CDCA94282271894200A38A3D /* YOPickView.m */,
 				CD11727C24EB6F8600E3A934 /* YOBaseView.h */,
@@ -340,6 +355,10 @@
 		CDCA93AF2271415300A38A3D /* YOToolDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CD2F09D82A0B9CF3002FA0AA /* parent-clip.svg */,
+				CD2F09D62A0B9ACD002FA0AA /* animation-extRef-image2.svg */,
+				CD2F09D42A0B98E9002FA0AA /* Cycling_Lambie.svg */,
+				CD2F09C92A0B8BF3002FA0AA /* 21510.svg */,
 				CDCA93B02271415300A38A3D /* AppDelegate.h */,
 				CDCA93B12271415300A38A3D /* AppDelegate.m */,
 				CDCA93E22271421A00A38A3D /* YODemoMainVc.h */,
@@ -378,6 +397,7 @@
 		CDCA93E02271417000A38A3D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CD2F09CB2A0B8EA0002FA0AA /* libSVGKit.a */,
 				CD92BA9122731E0700B44FD7 /* SystemConfiguration.framework */,
 				10110B1B462D543F1368EA9C /* libPods-YOToolDemo.a */,
 			);
@@ -414,6 +434,7 @@
 				CD7B892C265E50F500BAAA5E /* YORoundProgressView.h in Headers */,
 				CDCA94212271821A00A38A3D /* UIButton+YOTool.h in Headers */,
 				CD7B8920265E4ADB00BAAA5E /* NSNumber+YOTool.h in Headers */,
+				CDBAABC72A9DCEB100AF077B /* YOButton.h in Headers */,
 				CDCA94292271894200A38A3D /* YOPickView.h in Headers */,
 				CD11728E24EB752F00E3A934 /* YODatePickView.h in Headers */,
 				CDC0133A27C71B060065417D /* YORoundTextView.h in Headers */,
@@ -584,7 +605,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD2F09D92A0B9CF3002FA0AA /* parent-clip.svg in Resources */,
 				CDCA93BD2271415400A38A3D /* LaunchScreen.storyboard in Resources */,
+				CD2F09D72A0B9ACD002FA0AA /* animation-extRef-image2.svg in Resources */,
+				CD2F09CA2A0B8BF3002FA0AA /* 21510.svg in Resources */,
+				CD2F09D52A0B98E9002FA0AA /* Cycling_Lambie.svg in Resources */,
 				CDCA93BA2271415400A38A3D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -640,6 +665,7 @@
 				CDCA93F7227148F600A38A3D /* YOMainTool.m in Sources */,
 				CD11729724EB79D600E3A934 /* NSMutableArray+YOTool.m in Sources */,
 				CDC0133B27C71B060065417D /* YORoundTextView.m in Sources */,
+				CDBAABC82A9DCEB100AF077B /* YOButton.m in Sources */,
 				CDCA94062271616300A38A3D /* UIImage+YOTool.m in Sources */,
 				CDCA940E22717AF300A38A3D /* UIViewController+YOTool.m in Sources */,
 				CDCA9402227160F600A38A3D /* NSDictionary+YOLogTool.m in Sources */,
@@ -862,7 +888,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = YOTool/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -890,7 +916,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = YOTool/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -949,12 +975,15 @@
 				DEVELOPMENT_TEAM = J4FP9RY6SG;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/YOToolDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = YOToolDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_LDFLAGS = "-all_load\n";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = jhj.YOToolDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -972,12 +1001,15 @@
 				DEVELOPMENT_TEAM = J4FP9RY6SG;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/YOToolDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = YOToolDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_LDFLAGS = "-all_load\n";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = jhj.YOToolDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

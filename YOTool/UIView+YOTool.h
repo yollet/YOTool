@@ -68,6 +68,19 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (UIImage *)screenshotView;
 
+/**
+ 提取某坐标的颜色
+ */
+- (UIColor *)colorOfPoint:(CGPoint)point;
+
+/**
+ 添加渐变色
+ colors : 渐变颜色组
+ locations : 0~1的颜色分割比例
+ type : 1 横向 2 竖向 3 左上-右下 4 左下-右上
+ */
+- (void)addColorWithColors:(NSArray<UIColor *> *)colors locations:(NSArray<NSNumber *> *)locations type:(NSInteger)type;
+
 @end
 
 NS_ASSUME_NONNULL_END

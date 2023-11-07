@@ -14,6 +14,8 @@
 #import "YORoundExerciseProgress.h"
 #import "RoundTextView.h"
 #import "YORoundTextView.h"
+#import <SVGKit/SVGKit.h>
+#import <SVGKit/SVGKImage.h>
 
 @interface YODemoMainVc () <UITextFieldDelegate, YORoundExerciseProgressDelegate>
 
@@ -79,6 +81,7 @@
      
      */
     
+    /*
     self.roundRadius = 100;
     self.sliderSize = CGSizeMake(30, 40);
     self.textSize = CGSizeMake(80, 35);
@@ -97,6 +100,7 @@
     self.progressBar.textSize = self.textSize;
     self.progressBar.maxSecond = 400;
     [self.view addSubview:_progressBar];
+     */
      
     
     /*
@@ -124,6 +128,51 @@
     [self.view addSubview:_roundText];
     */
      
+    
+    [self showSvgImage];
+}
+
+#pragma mark -- svg加载 --
+- (void)showSvgImage
+{
+//    NSString *file = [[NSBundle mainBundle] pathForResource:@"21510" ofType:@"svg"];
+//    NSData *data = [NSData dataWithContentsOfFile:file];
+    
+    
+    
+    SVGKImage *image = [SVGKImage imageNamed:@"21510"];
+    image.size = CGSizeMake(100, 100);
+
+
+    SVGKLayeredImageView *imageView = [[SVGKLayeredImageView alloc] initWithSVGKImage:image];
+    [self.view addSubview:imageView];
+//
+//    imageView.frame = CGRectMake(100, 100, 100, 100);
+//
+//    CALayer *layer = [imageView.image layerWithIdentifier:@"make-me-a-hanzi-clip-0"];
+//
+//    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"position"];
+//    animation.duration = 1;
+//    animation.autoreverses = YES;
+//    animation.repeatCount = 100000;
+//    animation.fromValue = [NSValue valueWithCGPoint:CGPointMake(150, 150)];
+//    animation.toValue = [NSValue valueWithCGPoint:CGPointMake(-150, -150)];
+//
+//    [layer addAnimation:animation forKey:@"moveGreenSquare"];
+    
+    
+    
+    SVGKSource *source = [SVGKSourceLocalFile internalSourceAnywhereInBundle:[NSBundle mainBundle] usingName:@"21510"]; // svg来源创建
+
+    SVGKParser *parser = [[SVGKParser alloc] initWithSource:source]; // 解析器实例
+    [parser addDefaultSVGParserExtensions]; // 规范解析器添加
+
+    SVGKParseResult *result = [parser parseSynchronously]; // 进行解析svg
+    // 对于CSS3的动画 @keyframes 无法识别
+    
+    
+    
+//    SVGKImage *image = [SVGKImage imageNamed:@"21510"];
 }
 
 - (BOOL)progressBeginSlide:(CGFloat)angle

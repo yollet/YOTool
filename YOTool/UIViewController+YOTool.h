@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef void(^AlertTextBlock)(NSString *text);
 
-@interface UIViewController (YOTool) <UITextFieldDelegate>
+@interface UIViewController (YOTool) 
 
 - (void)showAlertWithTitle:(NSString *_Nullable)title info:(NSString *_Nullable)info leftStr:(NSString *)leftStr rightStr:(NSString *_Nullable)rightStr type:(AlertType)type leftBlock:(void(^_Nullable)(void))leftBlock rightBlock:(void(^_Nullable)(void))rightBlock;
 

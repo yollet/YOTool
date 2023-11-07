@@ -10,9 +10,18 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YOBaseField : UITextField
+typedef BOOL(^YOFieldReturnBlock)(void);
+typedef void(^YOFieldTextChangeBlock)(NSString *text);
 
-@property (nonatomic, assign) NSInteger maxLenth;
+@interface YOBaseField : UITextField <UITextFieldDelegate>
+
+@property (nonatomic, strong) UILabel *numLabel;
+
+@property (nonatomic, assign) NSInteger maxLength;
+@property (nonatomic, assign) BOOL showNum;
+@property (nonatomic, copy) YOFieldReturnBlock returnBlock;
+@property (nonatomic, copy) YOFieldTextChangeBlock changeBlock;
+@property (nonatomic, assign) CGFloat leftWidth;
 
 @end
 

@@ -31,24 +31,30 @@
         self.fitX = [UIScreen mainScreen].bounds.size.width / 375.0;
         self.fitY = [UIScreen mainScreen].bounds.size.height / 667.0;
         
-        if ([self isIPad]) { // 仅限横屏
-            self.fitX = [UIScreen mainScreen].bounds.size.width / 1024.0;
-            self.fitY = [UIScreen mainScreen].bounds.size.height / 766.0;
+        if ([self isIPad]) {
+            if ([UIScreen mainScreen].bounds.size.width > [UIScreen mainScreen].bounds.size.height) {
+                self.fitX = [UIScreen mainScreen].bounds.size.width / 1024.0;
+//                self.fitY = [UIScreen mainScreen].bounds.size.height / 766.0;
+                self.fitY = _fitX;
+            }
+            else {
+                self.fitX = [UIScreen mainScreen].bounds.size.width / 766.0;
+//                self.fitY = [UIScreen mainScreen].bounds.size.height / 1024.0;
+                self.fitY = _fitX;
+            }
         }
         
         self.isX = NO;
         self.topHeight = 0;
         self.bottomHeight = 0;
         
-        if ([UIScreen mainScreen].bounds.size.height == 812 || [UIScreen mainScreen].bounds.size.height == 896) {
+        if ([UIScreen mainScreen].bounds.size.height == 812 || [UIScreen mainScreen].bounds.size.height == 896 || [UIScreen mainScreen].bounds.size.height == 844 || [UIScreen mainScreen].bounds.size.height == 780 || [UIScreen mainScreen].bounds.size.height == 926) {
             self.topHeight = 24;
             self.bottomHeight = 34;
-            self.fitY = 1;
+            self.fitY = _fitX;
             self.isX = YES;
         }
-        if ([UIScreen mainScreen].bounds.size.height == 896) {
-            self.fitY = _fitX;
-        }
+        
     }
     return self;
 }
@@ -61,6 +67,14 @@
     return [regextestmobile evaluateWithObject:phoneNum];
 }
 
+#pragma mark -- 校验密码 --
+- (BOOL)passwordIsOk:(NSString *)password
+{
+    NSString *PASSWORD = @"[a-zA-Z0-9~!@#$%^&*()_+]{6,18}";
+    NSPredicate *regextestmobile = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", PASSWORD];
+    return [regextestmobile evaluateWithObject:password];
+}
+
 #pragma mark -- 字符串高亮系列 --
 - (NSMutableAttributedString *)attributedStringWithRang:(NSRange)rang str:(NSString *)str font:(UIFont *)font color:(UIColor *)color
 {
@@ -71,6 +85,9 @@
 
 - (NSMutableAttributedString *)getAttStrWithStr:(NSString *)oldStr array:(NSArray *)strArray font:(UIFont *)font textColor:(UIColor *)textColor
 {
+    if (!oldStr || [oldStr isKindOfClass:[NSNull class]]) {
+        return nil;
+    }
     NSMutableAttributedString *attributeString  = [[NSMutableAttributedString alloc] initWithString:oldStr];
     
     for (int i = 0; i < strArray.count; i ++) {
@@ -87,6 +104,12 @@
     
     return attributeString;
 }
+    
+#pragma mark -- 高亮数字 --
+ - (NSMutableAttributedString *)highlightNumWithStr:(NSString *)oldStr font:(UIFont *)font textColor:(UIColor *)textColor
+ {
+     return [self getAttStrWithStr:oldStr array:@[@"0", @"1", @"2", @"3", @"4", @"5", @"6", @"7", @"8", @"9"] font:font textColor:textColor];
+ }
 
 - (NSMutableAttributedString *)lineAttributedStringWithRang:(NSRange)rang str:(NSString *)str font:(UIFont *)font color:(UIColor *)color
 {
@@ -277,7 +300,7 @@
 #pragma mark -- 转化URLEncode --
 - (NSString *)getURLEncodeStrWithStr:(NSString *)urlStr
 {
-    return (NSString *)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,(CFStringRef)urlStr, NULL, (CFStringRef)@"!*'();:@&=+$,/?%#[]", kCFStringEncodingUTF8));
+    return [urlStr stringByAddingPercentEncodingWithAllowedCharacters:[[NSCharacterSet characterSetWithCharactersInString:@"!*'();:@&=+$,/?%#[]"] invertedSet]];
 }
 
 #pragma mark -- 时间戳转时间 --

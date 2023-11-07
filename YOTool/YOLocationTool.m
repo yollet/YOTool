@@ -50,6 +50,7 @@
             if (self.locationBlock) {
                 self.locationBlock(myLocation, placemark);
             }
+            /*
             NSLog(@"经度 == %f, 纬度 == %f =============================", myLocation.coordinate.longitude, myLocation.coordinate.latitude);
             NSLog(@"all == %@ =============================", placemark.addressDictionary);
             NSLog(@"administrativeArea == %@ =============================", placemark.administrativeArea);
@@ -60,6 +61,7 @@
             NSLog(@"inlandWater == %@ =============================", placemark.inlandWater);
             NSLog(@"ocean == %@ =============================", placemark.ocean);
             NSLog(@"areasOfInterest == %@ =============================", placemark.areasOfInterest);
+             */
         }
     }];
 

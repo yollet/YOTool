@@ -377,10 +377,57 @@ static void *kUIViewLayoutMethodPropertyRightGap = &kUIViewLayoutMethodPropertyR
         UIImage *image =  UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
         return image;
-        
-        @yo_weakify(self);
-        @yo_strongify(self);
     }
+}
+
+- (UIColor *)colorOfPoint:(CGPoint)point
+{
+    unsigned char pixel[4] = {0};
+        CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+        CGContextRef context = CGBitmapContextCreate(pixel, 1, 1, 8, 4, colorSpace, (CGBitmapInfo)kCGImageAlphaPremultipliedLast);
+     
+        CGContextTranslateCTM(context, -point.x, -point.y);
+     
+        [self.layer renderInContext:context];
+     
+        CGContextRelease(context);
+        CGColorSpaceRelease(colorSpace);
+     
+        UIColor *color = [UIColor colorWithRed:pixel[0]/255.0 green:pixel[1]/255.0 blue:pixel[2]/255.0 alpha:pixel[3]/255.0];
+     
+        return color;
+
+}
+
+- (void)addColorWithColors:(NSArray<UIColor *> *)colors locations:(NSArray<NSNumber *> *)locations type:(NSInteger)type
+{
+    CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+    NSMutableArray *cgColors = [NSMutableArray array];
+    for (UIColor *tempColor in colors) {
+        [cgColors addObject:(__bridge id)tempColor.CGColor];
+    }
+    gradientLayer.colors = cgColors;
+    gradientLayer.locations = locations;
+    CGPoint start = CGPointZero;
+    CGPoint end = CGPointZero;
+    
+    if (type == 1) {
+        end = CGPointMake(1.0, 0);
+    }
+    else if (type == 2) {
+        end = CGPointMake(0, 1.0);
+    }
+    else if (type == 3) {
+        end = CGPointMake(1.0, 1.0);
+    }
+    else if (type == 4) {
+        start = CGPointMake(1.0, 1.0);
+        end = CGPointMake(0, 0);
+    }
+    gradientLayer.startPoint = start;
+    gradientLayer.endPoint = end;
+    gradientLayer.frame = self.bounds;
+    [self.layer addSublayer:gradientLayer];
 }
 
 @end
