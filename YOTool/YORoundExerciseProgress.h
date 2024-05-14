@@ -4,7 +4,8 @@
 //
 //  Created by jhj on 2022/2/22.
 //  Copyright © 2022 jhj. All rights reserved.
-//  圆形进度条
+
+//  环形进度条
 
 #import "YOBaseView.h"
 #import "YORoundTextView.h"

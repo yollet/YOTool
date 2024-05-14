@@ -15,15 +15,5 @@
     return [NSString stringWithFormat:@"%ld", [self integerValue]];
 }
 
-- (BOOL)isNull
-{
-    if (self == NULL || self == nil) {
-        return YES;
-    }
-    if ([self isKindOfClass:[NSNull class]]) {
-        return YES;
-    }
-    return NO;
-}
 
 @end

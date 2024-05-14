@@ -4,7 +4,8 @@
 //
 //  Created by jhj on 2019/4/25.
 //  Copyright © 2019 jhj. All rights reserved.
-//
+
+//  UIView的扩展，包括点语法布局，添加圆角，添加渐变色等
 
 #import <UIKit/UIKit.h>
 

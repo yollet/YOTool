@@ -33,6 +33,19 @@
 #import "YORoundProgressView.h"
 #import "YORoundExerciseProgress.h"
 #import "YORoundTextView.h"
+#import "YOSpeechTool.h"
+#import "YOButton.h"
+#import "YOSoundPlayTool.h"
+#import "YOTextView.h"
+#import "YOProgressView.h"
+
+typedef void(^YOIntegerBlock)(NSInteger tag);
+typedef void(^YOVoidBlock)(void);
+typedef void(^YOFloatBlock)(CGFloat value);
+typedef void(^YOBoolBlock)(BOOL value);
+typedef void(^YOStringBlock)(NSString *value);
+typedef void(^YODicBlock)(NSDictionary *value);
+typedef void(^YOArrayBlock)(NSArray *value);
 
 CG_INLINE CGFloat FitX(CGFloat a)
 {

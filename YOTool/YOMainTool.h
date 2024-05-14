@@ -4,7 +4,8 @@
 //
 //  Created by jhj on 2019/4/25.
 //  Copyright © 2019 jhj. All rights reserved.
-//
+
+// 综合工具类单例，包含一些简单的功能方法
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -155,6 +156,11 @@ urlEncode解码
  生成二维码
  */
 - (UIImage *)getTwoCodeImageWithString:(NSString *)string;
+
+/**
+ 获取视频封面
+ */
+- (UIImage *)getVideoImageWithUrl:(NSURL *)url;
 
 @end
 

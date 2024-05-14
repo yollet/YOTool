@@ -9,6 +9,7 @@
 #import "YOMainTool.h"
 #import <sys/utsname.h>
 #import <CommonCrypto/CommonDigest.h>
+#import <PhotosUI/PhotosUI.h>
 #import <WebKit/WebKit.h>
 
 @implementation YOMainTool
@@ -621,6 +622,21 @@
     [filter setValue:data forKey:@"inputMessage"];
     CIImage *image = [filter outputImage];
     return [UIImage imageWithCIImage:image];
+}
+
+#pragma mark -- 获取视频封面 --
+- (UIImage *)getVideoImageWithUrl:(NSURL *)url
+{
+    AVURLAsset *asset = [[AVURLAsset alloc] initWithURL:url options:nil];
+    AVAssetImageGenerator *generator = [[AVAssetImageGenerator alloc] initWithAsset:asset];
+    generator.appliesPreferredTrackTransform = YES;
+    CMTime time = CMTimeMake(0.0, 600);
+    NSError *error = nil;
+    CMTime actualTime;
+    CGImageRef imageRef = [generator copyCGImageAtTime:time actualTime:&actualTime error:&error];
+    UIImage *thumb = [[UIImage alloc] initWithCGImage:imageRef];
+    CGImageRelease(imageRef);
+    return thumb;
 }
 
 @end

@@ -4,7 +4,8 @@
 //
 //  Created by jhj on 2021/5/26.
 //  Copyright © 2021 jhj. All rights reserved.
-//
+
+//  NSString类扩展
 
 #import <Foundation/Foundation.h>
 
@@ -14,7 +15,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSString *)integerString;
 
-- (BOOL)isNull;
 
 @end
 

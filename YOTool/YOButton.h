@@ -4,7 +4,15 @@
 //
 //  Created by jhj on 2023/8/29.
 //  Copyright © 2023 jhj. All rights reserved.
-//
+
+//  点语法布局的Button, 支持一图一文本的格式化或自定义布局
+//  例如
+/*
+    btn = [YOButton buttonWithType:UIButtonTypeSystem];
+    btn.frame = someFrame;
+    btn.yo_setDefault(YOTopImageType).yo_setBottomSpace(10);
+ */
+
 
 #import <UIKit/UIKit.h>
 

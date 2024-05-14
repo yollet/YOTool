@@ -16,8 +16,11 @@
 #import "YORoundTextView.h"
 #import <SVGKit/SVGKit.h>
 #import <SVGKit/SVGKImage.h>
+#import "YOSoundPlayTool.h"
+#import "YOTool/YOTool.h"
 
-@interface YODemoMainVc () <UITextFieldDelegate, YORoundExerciseProgressDelegate>
+@interface YODemoMainVc () <UITextFieldDelegate, YORoundExerciseProgressDelegate, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+
 
 @property (nonatomic, strong) UITextField *myField;
 @property (nonatomic, strong) UIView *sloder;
@@ -37,9 +40,13 @@
 @property (nonatomic, assign) CGSize sliderSize;
 @property (nonatomic, assign) CGSize textSize;
 
+@property (nonatomic, strong) UICollectionView *collectionView;
+
 @end
 
 @implementation YODemoMainVc
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -47,10 +54,114 @@
     
     self.navigationController.navigationBar.hidden = YES;
     
+    YOButton *btn = [YOButton buttonWithType:UIButtonTypeSystem];
+    [self.view addSubview:btn];
+    btn.yo_setLeft(30).yo_setTop(66).yo_setWidth(100).yo_setHeight(30);
+    btn.yo_setDefault(YORoundType);
+    [btn addTarget:self action:@selector(showProgress) forControlEvents:UIControlEventTouchUpInside];
+    
+//    [self textSlider];
+    
+//    [self textRoundProgress];
+    
+//    [self textRoundText];
+     
+//    [self showSvgImage];
+    
+//    [self textCollectionView];
+    
+    
+    
+}
+
+#pragma mark -- 进度条 --
+- (void)showProgress
+{
+    YOProgressView *progressView = [[YOProgressView alloc] initWithFrame:CGRectMake(30, 120, 222, 20)];
+    [self.view addSubview:progressView];
+    
+    [progressView addPanWithBlock:^(CGFloat progress) {
+        NSLog(@"%f", progress);
+    }];
+}
+
+#pragma mark -- textView --
+- (void)showTextView
+{
+    YOTextView *textView = [[YOTextView alloc] initWithFrame:CGRectMake(20, 100, 222, 111)];
+    [self.view addSubview:textView];
+    
+    
+    textView.maxLength = 10;
+    textView.showNum = YES;
+    textView.placeholder = @"打分";
+    textView.backgroundColor = [UIColor cyanColor];
+    
+    textView.topHeight = 15;
+    textView.leftWidth = 15;
+    
+    
+}
+
+#pragma mark -- 播放音效 --
+- (void)playSound
+{
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"大红色" ofType:@"mp3"];
+    NSLog(@"%@", path);
+    [YOSoundPlayTool playSoundWithPath:path];
+}
+
+#pragma mark -- collectionView缩放 --
+- (void)textCollectionView
+{
+    CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
+    YOCollectionFlowLayout *layout = [[YOCollectionFlowLayout alloc] init];
+    layout.maxSize = CGSizeMake(250, 250);
+    layout.minSize = CGSizeMake(200, 200);
+    self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 100, screenWidth, 500) collectionViewLayout:layout];
+    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"text"];
+    self.collectionView.delegate = self;
+    self.collectionView.dataSource = self;
+    
+    [self.view addSubview:self.collectionView];
+}
+
+#pragma mark -- 环形进度条 --
+- (void)textRoundProgress
+{
     CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
     CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
     
-    /*
+    self.roundRadius = 100;
+    self.sliderSize = CGSizeMake(30, 40);
+    self.textSize = CGSizeMake(80, 35);
+    
+    CGFloat outRadius = self.roundRadius + self.sliderSize.height / 2.0 + self.textSize.height / 2.0;
+    CGFloat backWidth = (outRadius + self.textSize.height / 2.0) * 2.0;
+    CGFloat lineWidth = 20;
+    
+//    self.textSize = CGSizeZero;
+    
+    
+    self.progressBar = [[YORoundExerciseProgress alloc] initWithFrame:CGRectMake((screenWidth - backWidth) / 2.0, 200, backWidth, backWidth) radius:self.roundRadius sliderSize:self.sliderSize lineWidth:lineWidth lineBackColor:[UIColor lightGrayColor] lineColor:[UIColor cyanColor] backColor:[UIColor whiteColor] sliderImage:[UIImage imageNamed:@"IMG_4778"] textSize:self.textSize font:[UIFont systemFontOfSize:12]];
+    self.progressBar.delegate = self;
+//    self.progressBar.backgroundColor = [UIColor orangeColor];
+    self.progressBar.textColor = [[YOMainTool sharedInstance] getRandomColorWithAlpha:1];
+    self.progressBar.textSize = self.textSize;
+    self.progressBar.maxSecond = 400;
+    [self.view addSubview:_progressBar];
+     
+    
+    
+    
+}
+
+#pragma mark -- 环形条加滑块 --
+- (void)textSlider
+{
+    CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
+    CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
+    
     self.round = [[YORoundProgressView alloc] initWithFrame:CGRectZero lineWidth:20 lineBackColor:[UIColor lightGrayColor] lineColor:[UIColor cyanColor] backColor:[UIColor whiteColor]];
     [self.view addSubview:self.round];
     
@@ -79,43 +190,15 @@
     UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panAction:)];
     [self.sloder addGestureRecognizer:pan];
      
-     */
-    
-    /*
-    self.roundRadius = 100;
-    self.sliderSize = CGSizeMake(30, 40);
-    self.textSize = CGSizeMake(80, 35);
-    
-    CGFloat outRadius = self.roundRadius + self.sliderSize.height / 2.0 + self.textSize.height / 2.0;
-    CGFloat backWidth = (outRadius + self.textSize.height / 2.0) * 2.0;
-    CGFloat lineWidth = 20;
-    
-//    self.textSize = CGSizeZero;
-    
-    
-    self.progressBar = [[YORoundExerciseProgress alloc] initWithFrame:CGRectMake((screenWidth - backWidth) / 2.0, 200, backWidth, backWidth) radius:self.roundRadius sliderSize:self.sliderSize lineWidth:lineWidth lineBackColor:[UIColor lightGrayColor] lineColor:[UIColor cyanColor] backColor:[UIColor whiteColor] sliderImage:[UIImage imageNamed:@"IMG_4778"] textSize:self.textSize font:[UIFont systemFontOfSize:12]];
-    self.progressBar.delegate = self;
-//    self.progressBar.backgroundColor = [UIColor orangeColor];
-    self.progressBar.textColor = [[YOMainTool sharedInstance] getRandomColorWithAlpha:1];
-    self.progressBar.textSize = self.textSize;
-    self.progressBar.maxSecond = 400;
-    [self.view addSubview:_progressBar];
-     */
      
-    
-    /*
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
-    [self.view addSubview:btn];
-    
-    self.btnTag = 1;
-    
-    btn.yo_setTop(600).yo_setLeft(100).yo_setWidth(100).yo_setHeight(50);
-    btn.backgroundColor = [UIColor cyanColor];
-    [btn addTarget:self action:@selector(btnAction) forControlEvents:UIControlEventTouchUpInside];
-     */
-    
+}
 
-    /*
+#pragma mark -- 弧形文字 --
+- (void)textRoundText
+{
+    CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
+    CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
+    
     self.roundText = [[YORoundTextView alloc] initWithFrame:CGRectZero];
     self.roundText.yo_setTop(200).yo_setWidth(250).yo_setHeight(350).yo_setCenterX(screenWidth / 2.0);
     self.roundText.radius = 100;
@@ -124,12 +207,9 @@
     self.roundText.endAngle =  ((30 + 90) / 180.0) * M_PI + M_PI;
     self.roundText.font = [UIFont systemFontOfSize:17];
     self.roundText.roundString = @"13:22/14:00";
-    self.roundText.backColor = [UIColor .clearColor];
+    self.roundText.backColor = [UIColor clearColor];
     [self.view addSubview:_roundText];
-    */
-     
     
-    [self showSvgImage];
 }
 
 #pragma mark -- svg加载 --
@@ -318,6 +398,34 @@ CGAffineTransform  GetCGAffineTransformRotateAroundPoint(float centerX, float ce
 {
     NSString *str = data[3];
     NSLog(@"%@", str);
+}
+
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
+{
+    return 1;
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return 10;
+}
+
+- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
+{
+    return UIEdgeInsetsMake(20, 20, 20, 20);
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    return CGSizeMake(250, 250);
+}
+
+- (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"text" forIndexPath:indexPath];
+    
+    cell.backgroundColor = [UIColor cyanColor];
+    return cell;
 }
 
 /*

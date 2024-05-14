@@ -4,7 +4,8 @@
 //
 //  Created by jhj on 2021/5/26.
 //  Copyright © 2021 jhj. All rights reserved.
-//
+
+//  增加字数限制和显示文本字数
 
 #import <UIKit/UIKit.h>
 

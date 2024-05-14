@@ -4,7 +4,8 @@
 //
 //  Created by jhj on 2019/4/25.
 //  Copyright © 2019 jhj. All rights reserved.
-//
+
+//  防止个别情况闪退
 
 #import <Foundation/Foundation.h>
 

@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16038B402BF237FF00AC1FD6 /* YOSoundPlayTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 16038B3E2BF237FF00AC1FD6 /* YOSoundPlayTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16038B412BF237FF00AC1FD6 /* YOSoundPlayTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 16038B3F2BF237FF00AC1FD6 /* YOSoundPlayTool.m */; };
+		16038B452BF23C3700AC1FD6 /* 大红色.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 16038B442BF23C3700AC1FD6 /* 大红色.mp3 */; };
+		161B68592BEE12D800EBFDCE /* YOSpeechTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 161B68572BEE12D800EBFDCE /* YOSpeechTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		161B685A2BEE12D800EBFDCE /* YOSpeechTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 161B68582BEE12D800EBFDCE /* YOSpeechTool.m */; };
+		161B685D2BEE1E2200EBFDCE /* YOPayTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 161B685B2BEE1E2200EBFDCE /* YOPayTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		161B685E2BEE1E2200EBFDCE /* YOPayTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 161B685C2BEE1E2200EBFDCE /* YOPayTool.m */; };
+		162620592BF356F500DB8BD2 /* YOTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 162620572BF356F500DB8BD2 /* YOTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1626205A2BF356F500DB8BD2 /* YOTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 162620582BF356F500DB8BD2 /* YOTextView.m */; };
+		1626205D2BF3592800DB8BD2 /* YOProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1626205B2BF3592800DB8BD2 /* YOProgressView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1626205E2BF3592800DB8BD2 /* YOProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1626205C2BF3592800DB8BD2 /* YOProgressView.m */; };
 		A3019646D26D6A85F62D5E2A /* libPods-YOToolDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10110B1B462D543F1368EA9C /* libPods-YOToolDemo.a */; };
 		CD11727E24EB6F8600E3A934 /* YOBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = CD11727C24EB6F8600E3A934 /* YOBaseView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD11727F24EB6F8600E3A934 /* YOBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD11727D24EB6F8600E3A934 /* YOBaseView.m */; };
@@ -109,6 +120,17 @@
 
 /* Begin PBXFileReference section */
 		10110B1B462D543F1368EA9C /* libPods-YOToolDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YOToolDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		16038B3E2BF237FF00AC1FD6 /* YOSoundPlayTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YOSoundPlayTool.h; sourceTree = "<group>"; };
+		16038B3F2BF237FF00AC1FD6 /* YOSoundPlayTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YOSoundPlayTool.m; sourceTree = "<group>"; };
+		16038B442BF23C3700AC1FD6 /* 大红色.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "大红色.mp3"; sourceTree = "<group>"; };
+		161B68572BEE12D800EBFDCE /* YOSpeechTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YOSpeechTool.h; sourceTree = "<group>"; };
+		161B68582BEE12D800EBFDCE /* YOSpeechTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YOSpeechTool.m; sourceTree = "<group>"; };
+		161B685B2BEE1E2200EBFDCE /* YOPayTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YOPayTool.h; sourceTree = "<group>"; };
+		161B685C2BEE1E2200EBFDCE /* YOPayTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YOPayTool.m; sourceTree = "<group>"; };
+		162620572BF356F500DB8BD2 /* YOTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YOTextView.h; sourceTree = "<group>"; };
+		162620582BF356F500DB8BD2 /* YOTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YOTextView.m; sourceTree = "<group>"; };
+		1626205B2BF3592800DB8BD2 /* YOProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YOProgressView.h; sourceTree = "<group>"; };
+		1626205C2BF3592800DB8BD2 /* YOProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YOProgressView.m; sourceTree = "<group>"; };
 		418FBD89FA842A5F9303EB6C /* Pods-YOToolDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YOToolDemo.release.xcconfig"; path = "Target Support Files/Pods-YOToolDemo/Pods-YOToolDemo.release.xcconfig"; sourceTree = "<group>"; };
 		65E81132B83C257BEDE99DD0 /* Pods-YOToolDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YOToolDemo.debug.xcconfig"; path = "Target Support Files/Pods-YOToolDemo/Pods-YOToolDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		CD11727C24EB6F8600E3A934 /* YOBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YOBaseView.h; sourceTree = "<group>"; };
@@ -314,6 +336,8 @@
 				CDBAABC62A9DCEB100AF077B /* YOButton.m */,
 				CDCA94272271894200A38A3D /* YOPickView.h */,
 				CDCA94282271894200A38A3D /* YOPickView.m */,
+				1626205B2BF3592800DB8BD2 /* YOProgressView.h */,
+				1626205C2BF3592800DB8BD2 /* YOProgressView.m */,
 				CD11727C24EB6F8600E3A934 /* YOBaseView.h */,
 				CD11727D24EB6F8600E3A934 /* YOBaseView.m */,
 				CD11728024EB703600E3A934 /* YOBaseScroll.h */,
@@ -324,6 +348,8 @@
 				CD11728924EB70FD00E3A934 /* YOBaseCollCell.m */,
 				CD7B8926265E4F7D00BAAA5E /* YOBaseField.h */,
 				CD7B8927265E4F7D00BAAA5E /* YOBaseField.m */,
+				162620572BF356F500DB8BD2 /* YOTextView.h */,
+				162620582BF356F500DB8BD2 /* YOTextView.m */,
 				CD11728C24EB752F00E3A934 /* YODatePickView.h */,
 				CD11728D24EB752F00E3A934 /* YODatePickView.m */,
 				CD11729024EB779E00E3A934 /* YOLocationTool.h */,
@@ -338,6 +364,12 @@
 				CDC0133927C71B060065417D /* YORoundTextView.m */,
 				CDDCDDB327C4BB3900FF9042 /* YORoundExerciseProgress.h */,
 				CDDCDDB427C4BB3900FF9042 /* YORoundExerciseProgress.m */,
+				161B68572BEE12D800EBFDCE /* YOSpeechTool.h */,
+				161B68582BEE12D800EBFDCE /* YOSpeechTool.m */,
+				16038B3E2BF237FF00AC1FD6 /* YOSoundPlayTool.h */,
+				16038B3F2BF237FF00AC1FD6 /* YOSoundPlayTool.m */,
+				161B685B2BEE1E2200EBFDCE /* YOPayTool.h */,
+				161B685C2BEE1E2200EBFDCE /* YOPayTool.m */,
 				CDCA939422713F1200A38A3D /* Info.plist */,
 			);
 			path = YOTool;
@@ -355,6 +387,7 @@
 		CDCA93AF2271415300A38A3D /* YOToolDemo */ = {
 			isa = PBXGroup;
 			children = (
+				16038B442BF23C3700AC1FD6 /* 大红色.mp3 */,
 				CD2F09D82A0B9CF3002FA0AA /* parent-clip.svg */,
 				CD2F09D62A0B9ACD002FA0AA /* animation-extRef-image2.svg */,
 				CD2F09D42A0B98E9002FA0AA /* Cycling_Lambie.svg */,
@@ -414,6 +447,7 @@
 				CDCA941522717E8400A38A3D /* NSNull+YOTool.h in Headers */,
 				CDCA941D2271818300A38A3D /* UITextField+YOTool.h in Headers */,
 				CD7B8928265E4F7D00BAAA5E /* YOBaseField.h in Headers */,
+				162620592BF356F500DB8BD2 /* YOTextView.h in Headers */,
 				CD11727E24EB6F8600E3A934 /* YOBaseView.h in Headers */,
 				CD11728A24EB70FD00E3A934 /* YOBaseCollCell.h in Headers */,
 				CDCA94052271616300A38A3D /* UIImage+YOTool.h in Headers */,
@@ -423,18 +457,22 @@
 				CDCA941922717F9900A38A3D /* UILabel+YOTool.h in Headers */,
 				CD7B8924265E4B0700BAAA5E /* NSString+YOTool.h in Headers */,
 				CDCA93F6227148F600A38A3D /* YOMainTool.h in Headers */,
+				16038B402BF237FF00AC1FD6 /* YOSoundPlayTool.h in Headers */,
 				CD11728224EB703600E3A934 /* YOBaseScroll.h in Headers */,
 				CDCA93E72271430400A38A3D /* UIView+YOTool.h in Headers */,
 				CD11729624EB79D600E3A934 /* NSMutableArray+YOTool.h in Headers */,
 				CDCA941122717E0200A38A3D /* NSMutableDictionary+YOTool.h in Headers */,
+				161B68592BEE12D800EBFDCE /* YOSpeechTool.h in Headers */,
 				CD7B891C265E43E600BAAA5E /* YOCollectionFlowLayout.h in Headers */,
 				CDF15FC627CF50E000C80894 /* YOFitSpaceFlowLayout.h in Headers */,
 				CDCA9401227160F600A38A3D /* NSDictionary+YOLogTool.h in Headers */,
 				CDCA93FD22715E7F00A38A3D /* UIFont+YOTool.h in Headers */,
 				CD7B892C265E50F500BAAA5E /* YORoundProgressView.h in Headers */,
+				161B685D2BEE1E2200EBFDCE /* YOPayTool.h in Headers */,
 				CDCA94212271821A00A38A3D /* UIButton+YOTool.h in Headers */,
 				CD7B8920265E4ADB00BAAA5E /* NSNumber+YOTool.h in Headers */,
 				CDBAABC72A9DCEB100AF077B /* YOButton.h in Headers */,
+				1626205D2BF3592800DB8BD2 /* YOProgressView.h in Headers */,
 				CDCA94292271894200A38A3D /* YOPickView.h in Headers */,
 				CD11728E24EB752F00E3A934 /* YODatePickView.h in Headers */,
 				CDC0133A27C71B060065417D /* YORoundTextView.h in Headers */,
@@ -607,6 +645,7 @@
 			files = (
 				CD2F09D92A0B9CF3002FA0AA /* parent-clip.svg in Resources */,
 				CDCA93BD2271415400A38A3D /* LaunchScreen.storyboard in Resources */,
+				16038B452BF23C3700AC1FD6 /* 大红色.mp3 in Resources */,
 				CD2F09D72A0B9ACD002FA0AA /* animation-extRef-image2.svg in Resources */,
 				CD2F09CA2A0B8BF3002FA0AA /* 21510.svg in Resources */,
 				CD2F09D52A0B98E9002FA0AA /* Cycling_Lambie.svg in Resources */,
@@ -660,10 +699,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1626205E2BF3592800DB8BD2 /* YOProgressView.m in Sources */,
 				CDCA941222717E0200A38A3D /* NSMutableDictionary+YOTool.m in Sources */,
 				CD7B891D265E43E600BAAA5E /* YOCollectionFlowLayout.m in Sources */,
+				161B685E2BEE1E2200EBFDCE /* YOPayTool.m in Sources */,
 				CDCA93F7227148F600A38A3D /* YOMainTool.m in Sources */,
 				CD11729724EB79D600E3A934 /* NSMutableArray+YOTool.m in Sources */,
+				16038B412BF237FF00AC1FD6 /* YOSoundPlayTool.m in Sources */,
 				CDC0133B27C71B060065417D /* YORoundTextView.m in Sources */,
 				CDBAABC82A9DCEB100AF077B /* YOButton.m in Sources */,
 				CDCA94062271616300A38A3D /* UIImage+YOTool.m in Sources */,
@@ -673,6 +715,7 @@
 				CD7B892D265E50F500BAAA5E /* YORoundProgressView.m in Sources */,
 				CDCA942A2271894200A38A3D /* YOPickView.m in Sources */,
 				CDCA941E2271818300A38A3D /* UITextField+YOTool.m in Sources */,
+				1626205A2BF356F500DB8BD2 /* YOTextView.m in Sources */,
 				CDCA94222271821A00A38A3D /* UIButton+YOTool.m in Sources */,
 				CD7B8921265E4ADB00BAAA5E /* NSNumber+YOTool.m in Sources */,
 				CD11728B24EB70FD00E3A934 /* YOBaseCollCell.m in Sources */,
@@ -687,6 +730,7 @@
 				CDDCDDB627C4BB3900FF9042 /* YORoundExerciseProgress.m in Sources */,
 				CDCA93FE22715E7F00A38A3D /* UIFont+YOTool.m in Sources */,
 				CDCA941622717E8400A38A3D /* NSNull+YOTool.m in Sources */,
+				161B685A2BEE12D800EBFDCE /* YOSpeechTool.m in Sources */,
 				CD11728724EB709B00E3A934 /* YOBaseCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -888,7 +932,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = YOTool/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -916,7 +960,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = YOTool/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
