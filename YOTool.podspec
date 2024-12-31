@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "YOTool"
-  spec.version      = "1.5"
+  spec.version      = "1.6"
   spec.summary      = "A practical tool."
 
   # This description is used to generate tags and improve search results.
@@ -65,7 +65,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.platform     = :ios
-    spec.platform     = :ios, "8.0"
+    spec.platform     = :ios, "10.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
@@ -80,7 +80,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/yollet/YOTool.git", :tag => "1.5" }
+  spec.source       = { :git => "https://github.com/yollet/YOTool.git", :tag => "1.6" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -133,6 +133,6 @@ Pod::Spec.new do |spec|
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # spec.dependency "JSONKit", "~> 1.5"
+  # spec.dependency "JSONKit", "~> 1.6"
 
 end

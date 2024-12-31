@@ -13,17 +13,16 @@ DEPENDENCIES:
   - SVGKit (~> 3.0.0)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - CocoaLumberjack
-    - SVGKit
-  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
     - SDWebImage
+    - SVGKit
 
 SPEC CHECKSUMS:
   CocoaLumberjack: bd155f2dd06c0e0b03f876f7a3ee55693122ec94
   SDWebImage: 27dd2c9ea07a2252f94557c9fbb6105ee94b74c9
   SVGKit: 1ad7513f8c74d9652f94ed64ddecda1a23864dea
 
-PODFILE CHECKSUM: 334b425544f62fc4425712b4a1679f539d564f3c
+PODFILE CHECKSUM: da25144e6903bb1fae06c2ea3f14b42614769ddb
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.16.2

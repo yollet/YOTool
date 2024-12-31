@@ -49,11 +49,33 @@
         self.topHeight = 0;
         self.bottomHeight = 0;
         
-        if ([UIScreen mainScreen].bounds.size.height == 812 || [UIScreen mainScreen].bounds.size.height == 896 || [UIScreen mainScreen].bounds.size.height == 844 || [UIScreen mainScreen].bounds.size.height == 780 || [UIScreen mainScreen].bounds.size.height == 926) {
+        UIWindow *window = [UIApplication sharedApplication].keyWindow;
+        CGFloat safeTop = 0;
+        CGFloat safeBottom = 0;
+        if (@available(iOS 11.0, *)) {
+            safeTop = window.safeAreaInsets.top - 20;
+            safeBottom = window.safeAreaInsets.bottom;
+        } else {
+            // Fallback on earlier versions
+        }
+        
+        if ([UIScreen mainScreen].bounds.size.height == 812 || [UIScreen mainScreen].bounds.size.height == 896 || [UIScreen mainScreen].bounds.size.height == 844 || [UIScreen mainScreen].bounds.size.height == 780 || [UIScreen mainScreen].bounds.size.height == 926 || [UIScreen mainScreen].bounds.size.height == 852 || [UIScreen mainScreen].bounds.size.height > 812) {
             self.topHeight = 24;
             self.bottomHeight = 34;
             self.fitY = _fitX;
             self.isX = YES;
+            if ([UIScreen mainScreen].bounds.size.height >= 852) {
+                self.topHeight = 34;
+
+            }
+            
+            if (safeTop > 0) {
+                self.topHeight = safeTop;
+            }
+            if (safeBottom > 0) {
+                self.bottomHeight = safeBottom;
+            }
+            
         }
         
     }
